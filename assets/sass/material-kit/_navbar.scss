@@ -14,7 +14,6 @@
     position: relative;
     height: 50px;
     line-height: 30px;
-    color: inherit;
     padding: 10px 15px;
 
     &:hover,
@@ -32,7 +31,7 @@
 
   .navbar-nav {
     > li > a {
-      color: inherit;
+      color: #333333;
       padding-top: 15px;
       padding-bottom: 15px;
 
@@ -44,8 +43,8 @@
 
       &:hover,
       &:focus {
-        color: inherit;
-        background-color: transparent;
+        color: #000000;
+        background-color: #FFFFFF;
       }
 
 
@@ -236,7 +235,7 @@
   }
 
   // SASS conversion note: please mirror any content change in _mixins-shared.scss navbar-variations-content
-  @include navbar-variations(unquote(".navbar"), unquote(""), $brand-primary);
+  @include navbar-variations(unquote(".navbar"), unquote(""), "#FFFFFF");
 
 
   &-inverse {
