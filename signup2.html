@@ -29,7 +29,9 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
-                <a class="navbar-brand" href="http://f2e.8150.co"><img src="/assets/img/logos/ff_logo1_250.png" class="img-responsive"></a>
+                <a class="navbar-brand" href="http://f2e.8150.co">
+                    <img src="/assets/img/logos/ff_logo1_250.png" class="img-responsive">
+                </a>
             </div>
 
             <div class="collapse navbar-collapse" id="navigation-example">
@@ -70,104 +72,96 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
                         <div class="card card-signup">
-                            <form class="form" method="" action="">
+                            <form class="form" method="" action="" class="form-group">
                                 <div class="header header-info text-center">
                                     <h4>Sign up for FaxForward</h4>
 
                                 </div>
                                 <div class="content">
-                                    <h3>Choose your Fax Number</h3>
-                                    <div class="input-group">
-                                        <strong>Search By:</strong>&nbsp;&nbsp;
-                                        <input type="radio" name="searchBy" checked="checked"> Area Code &nbsp;&nbsp;
-                                        <input type="radio" name="searchBy"> TollFree
-                                        <br />
-
-                                        <div class="dropdown">
-                                            <strong>Area Code:</strong>&nbsp;&nbsp;
-                                            <a href="#" class="btn btn-simple dropdown-toggle" data-toggle="dropdown">
-                                                Choose
-                                                <b class="caret"></b>
-                                            </a>
-                                            <ul class="dropdown-menu" style="margin-left: 78px;">
-                                                <li><a href="#">303</a></li>
-                                                <li><a href="#">720</a></li>
-                                                <li><a href="#">970</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">888 Toll Free</a></li>
-                                            </ul>
+                                    <h3>Let's get some quick details</h3>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <input type="text" value="" id="firstName" placeholder="First Name" class="form-control">
                                         </div>
-                                        <strong>Choose your number:</strong>&nbsp;&nbsp;
-                                        <br />
-                                        <input type="radio" name="faxNumber" checked="checked"> 303-111-2222&nbsp;&nbsp;
-                                        <input type="radio" name="faxNumber"> 303-111-2223&nbsp;&nbsp;
-                                        <input type="radio" name="faxNumber"> 303-111-2223&nbsp;&nbsp;
-                                        <input type="radio" name="faxNumber"> 303-111-2343&nbsp;&nbsp;
-                                        <br/>
-                                        <input type="radio" name="faxNumber"> 303-111-3493&nbsp;&nbsp;
-                                        <input type="radio" name="faxNumber"> 303-111-4943&nbsp;&nbsp;
-
-
-                                        <br />
+                                        <div class="col-lg-6">
+                                            <input type="text" value="" id="lastName" placeholder="Last Name" class="form-control">
+                                        </div>
                                     </div>
-
-
-
-
-
-
-                                    <!-- If you want to add a checkbox to this form, uncomment this code
-
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" name="optionsCheckboxes" checked>
-											Subscribe to newsletter
-										</label>
-									</div> -->
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <input type="email" class="form-control" id="phone" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <hr />
+                                        <div class="col-lg-6">
+                                            <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter username">
+                                        </div>
+                                        <div class="col-lg-6" style="padding-top:30px;">
+                                            <small id="usernameHelp" class="form-text text-muted">We recommend you use your email address</small>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <input type="password" value="" id="password1" placeholder="Choose Password" class="form-control">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input type="password" value="" id="password2" placeholder="Confirm Password" class="form-control">
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="text-center">
+                                        <a href="signup2.html" class="btn btn-info btn-lg">Next
+                                            <i class="material-icons">forward</i>
+                                        </a>
+                                    </div>
                                 </div>
-                                <hr />
-                                <div class="footer text-center">
-                                    <a href="signup2.html" class="btn btn-info btn-lg">Continue <i class="material-icons">forward</i></a>
-                                </div>
-                            </form>
+
+
                         </div>
+
+                        </form>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
-        <!--Footer-->
-        <footer class="footer" style="background-color:#EEEEEE">
-            <div class="container">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="http://www.westfax.com">
-							FaxForward
-						</a>
-                        </li>
-                        <li>
-                            <a href="about.html">
-						   About Us
-						</a>
-                        </li>
-                        <li>
-                            <a href="https://westfax.com/blog">
-						   Blog
-						</a>
-                        </li>
 
-                    </ul>
-                </nav>
-                <div class="copyright pull-right">
-                    &copy; 2017, FaxForward
-                </div>
-            </div>
-        </footer>
-        <!--End Footer-->
+
+
     </div>
+    <!--Footer-->
+    <footer class="footer" style="background-color:#EEEEEE">
+        <div class="container">
+            <nav class="pull-left">
+                <ul>
+                    <li>
+                        <a href="http://www.westfax.com">
+                            FaxForward
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://westfax.com/blog">
+                            Blog
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="copyright pull-right">
+                &copy; 2017, FaxForward
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
 </body>
 <!--   Core JS Files   -->
 <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
@@ -182,5 +176,14 @@
 
 <!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
 <script src="/assets/js/material-kit.js" type="text/javascript"></script>
+<script>
+    jQuery(document).ready(function () {
+
+        jQuery('#email').change(function () {
+            jQuery('#username').val(jQuery('#email').val());
+        });
+    });
+
+</script>
 
 </html>
