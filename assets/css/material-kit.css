@@ -2344,6 +2344,8 @@ h2.title {
     border-radius: 3px;
     padding: 15px 0;
     background-color: #FFFFFF; }
+  .card .header-blackish {
+    background: #5d5d5d; }
   .card .header-primary {
     background: linear-gradient(60deg, #ab47bc, #7b1fa2); }
   .card .header-info {
