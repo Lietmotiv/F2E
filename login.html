@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
+    <!-- HTML meta refresh URL redirection -->
     <title>FaxForward by WestFax</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -20,22 +20,22 @@
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/assets/css/material-kit.css" rel="stylesheet" />
     <link href="/assets/css/inbox.css" rel="stylesheet" />
-    
+
 </head>
 
-<body class="signup-page" style="background-color:#F5F5F5;">
-    <!--Begin Registered Nav-->
+<body>
+    <!--Begin unregistered Nav-->
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#FFFFFF;">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
                 <a class="navbar-brand" href="http://f2e.8150.co">
-                    <img src="/assets/img/logos/ff_logo1_250.png" class="img-responsive">
+                    <img src="/assets/img/logos/WestFax_Color_100x300-300x100.png" class="img-responsive logo-md">
                 </a>
             </div>
 
-            <div class="collapse navbar-collapse" id="navigation-example">
+            <div class="collapse navbar-collapse" id="navigation">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="https://twitter.com/westfaxinc" target="_blank" class="btn btn-simple btn-white btn-just-icon" style="color:#0084b4">
@@ -55,59 +55,53 @@
 
                     <li>
                         <a href="help.html" target="_blank">
-                            <i class="fa fa-question-circle"></i> Help
+                            Help
                         </a>
                     </li>
                     <li>
                         <a href="help.html" target="_blank">
-                            <i class="fa fa-volume-control-phone"></i> Contact Us
+                            Contact Us
                         </a>
                     </li>
 
                     <li class="rightNav">
                         <a href="login.html">
                             <strong>Login</strong>
-                            
                         </a>
-                       
+
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--End Registered Nav-->
+    <!--End unregistered Nav-->
     <div class="wrapper">
-        <div class="header header-filter">
+        <div class="main">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 col-sm9 col-sm-offset-1">
-                        <div class="card card-signup">
-                            <form class="form" method="" action="">
-                                <div class="header header-blackish text-center">
-                                    <h4>Sign up today for a free <strike>30</strike> 60 day free trial. Cancel anytime. Afterwards <strong>$8.99</strong> a month.</h4>
-                                    <div class="social-line">
-                                        <a href="signup.html" class="btn btn-danger btn-lg">Start Free Trial Today!</a>
+                        <form class="form" method="" action="">
 
-                                    </div>
+                            <p class="text-divider">
+                                <h4 class="text-center">Log in to FaxFoward</h4>
+                            </p>
+                            <div class="content">
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">account_circle</i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Username...">
                                 </div>
-                                <p class="text-divider">Or Login</p>
-                                <div class="content">
 
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-											<i class="material-icons">account_circle</i>
-										</span>
-                                        <input type="text" class="form-control" placeholder="Username...">
-                                    </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">lock_outline</i>
+                                    </span>
+                                    <input type="password" placeholder="Password..." class="form-control" />
+                                </div>
 
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-											<i class="material-icons">lock_outline</i>
-										</span>
-                                        <input type="password" placeholder="Password..." class="form-control" />
-                                    </div>
-
-                                    <!-- If you want to add a checkbox to this form, uncomment this code
+                                <!-- If you want to add a checkbox to this form, uncomment this code
 
 									<div class="checkbox">
 										<label>
@@ -115,47 +109,46 @@
 											Subscribe to newsletter
 										</label>
 									</div> -->
-                                </div>
-                                <div class="text-center">
-                                    <a href="inbox.html" class="btn btn-info btn-lg">Login
-                                    </a>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="inbox.html" class="btn btn-info btn-lg">Login
+                                </a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Footer-->
-        <footer class="footer" style="background-color:#EEEEEE">
-            <div class="container">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="http://www.westfax.com">
-							FaxForward
-						</a>
-                        </li>
-                        <li>
-                            <a href="about.html">
-						   About Us
-						</a>
-                        </li>
-                        <li>
-                            <a href="https://westfax.com/blog">
-						   Blog
-						</a>
-                        </li>
-
-                    </ul>
-                </nav>
-                <div class="copyright pull-right">
-                    &copy; 2017, FaxForward
-                </div>
-            </div>
-        </footer>
-        <!--End Footer-->
     </div>
+    <!--Footer-->
+    <footer class="footer" style="background-color:#EEEEEE">
+        <div class="container">
+            <nav class="pull-left">
+                <ul>
+                    <li>
+                        <a href="http://www.westfax.com">
+                            &copy; 2017, WestFax
+                        </a>
+                    </li>
+                    <li>
+                        <a href="help.html">
+                            Help
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="pull-right">
+                <a href="tel:8004736208">(800) 473-6208</a>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
 
 </body>
 <!--   Core JS Files   -->

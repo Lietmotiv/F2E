@@ -19,34 +19,25 @@
     <!-- CSS Files -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/assets/css/material-kit.css" rel="stylesheet" />
-    
+    <link href="/assets/css/inbox.css" rel="stylesheet" />
+
 
 </head>
 
-<body class="signup-page" style="background-color:#F5F5F5;">
-    <!--Begin Unregistered Nav-->
+<body>
+    <!--Begin unregistered Nav-->
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#FFFFFF;">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
                 <a class="navbar-brand" href="http://f2e.8150.co">
-                    <img src="/assets/img/logos/ff_logo1_250.png" class="img-responsive">
+                    <img src="/assets/img/logos/WestFax_Color_100x300-300x100.png" class="img-responsive logo-md">
                 </a>
             </div>
 
-            <div class="collapse navbar-collapse" id="navigation-example">
+            <div class="collapse navbar-collapse" id="navigation">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="help.html" target="_blank">
-                            <i class="fa fa-question-circle"></i> Help
-                        </a>
-                    </li>
-                    <li>
-                        <a href="help.html" target="_blank">
-                            <i class="fa fa-volume-control-phone"></i> Contact Us
-                        </a>
-                    </li>
                     <li>
                         <a href="https://twitter.com/westfaxinc" target="_blank" class="btn btn-simple btn-white btn-just-icon" style="color:#0084b4">
                             <i class="fa fa-twitter"></i>
@@ -62,113 +53,128 @@
                             <i class="fa fa-linkedin"></i>
                         </a>
                     </li>
+
+                    <li>
+                        <a href="help.html" target="_blank">
+                            Help
+                        </a>
+                    </li>
+                    <li>
+                        <a href="help.html" target="_blank">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li class="rightNav">
+                        <a href="login.html">
+                            <strong>Login</strong>
+                        </a>
+
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--End Unregistered Nav-->
+    <!--End unregistered Nav-->
     <div class="wrapper">
-        <div class="header header-filter bigForm">
+        <div class="main">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
-                        <div class="card card-signup">
-                            <div class="header header-info text-center">
-                                <h4>Sign up for FaxForward</h4>
+                        <form id="form3a bigForm" class="form-horizontal">
 
-                            </div>
                             <div class="content">
-                                <h3>Billing Information</h3>
-                                <form id="form3a" class="form-horizontal" >
-                                    <div class="form-group">
-                                            <input type="text" class="form-control" id="BillingAddress1" placeholder="Address Line 1" required>
-                                    </div>
-                                    <div class="form-group">
-                                            <input type="text" class="form-control" id="BillingAddress2" placeholder="Address Line 2">
-                                     </div> 
-                                    <div class="form-group">
-                                        <div class="col-md-6 mb-3">
-                                            <input type="text" class="form-control" id="BillingCity" placeholder="City" required>
+                                <div class="page-header">
+                                    <h3>Billing Information</h3>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="BillingAddress1" placeholder="Address Line 1" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="BillingAddress2" placeholder="Address Line 2">
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" id="BillingCity" placeholder="City" required>
 
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <input type="text" class="form-control" id="BillingState" placeholder="State" required>
-                                            
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <input type="text" class="form-control" id="BillingZip" placeholder="Zip" required>
-                                        </div>
                                     </div>
-                                    <fieldset>
-                                        <h3>Payment</h3>
-                                        <div class="form-group">
-                                          <div class="col-sm-9">
+                                    <div class="col-md-3 mb-3">
+                                        <input type="text" class="form-control" id="BillingState" placeholder="State" required>
+
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <input type="text" class="form-control" id="BillingZip" placeholder="Zip" required>
+                                    </div>
+                                </div>
+                                <fieldset>
+                                    <h3>Payment</h3>
+                                    <div class="form-group">
+                                        <div class="col-sm-9">
                                             <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
-                                          </div>
                                         </div>
-                                        <div class="form-group">
-                                          <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
-                                          </div>
-                                        </div>
-                                        <div class="form-group">
-                                          <div class="col-sm-9">
-                                            <div class="row">
-                                              <div class="col-xs-3">
-                                                <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
-                                                  <option>Month</option>
-                                                  <option value="01">Jan (01)</option>
-                                                  <option value="02">Feb (02)</option>
-                                                  <option value="03">Mar (03)</option>
-                                                  <option value="04">Apr (04)</option>
-                                                  <option value="05">May (05)</option>
-                                                  <option value="06">June (06)</option>
-                                                  <option value="07">July (07)</option>
-                                                  <option value="08">Aug (08)</option>
-                                                  <option value="09">Sep (09)</option>
-                                                  <option value="10">Oct (10)</option>
-                                                  <option value="11">Nov (11)</option>
-                                                  <option value="12">Dec (12)</option>
-                                                </select>
-                                              </div>
-                                              <div class="col-xs-3">
-                                                <select class="form-control" name="expiry-year">
-                                                  <option value="13">2013</option>
-                                                  <option value="14">2014</option>
-                                                  <option value="15">2015</option>
-                                                  <option value="16">2016</option>
-                                                  <option value="17">2017</option>
-                                                  <option value="18">2018</option>
-                                                  <option value="19">2019</option>
-                                                  <option value="20">2020</option>
-                                                  <option value="21">2021</option>
-                                                  <option value="22">2022</option>
-                                                  <option value="23">2023</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="form-group">
-                                          <div class="col-sm-3">
-                                            <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code">
-                                          </div>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" name="optionsCheckboxes" checked>
-                                                I agree to the <a href="#">terms and conditions.</a>
-                                            </label>
-                                        </div>
-                                        
-                                      </fieldset>
-                                    <div class="text-center">
-                                        <a href="inbox.html" class="btn btn-info btn-lg">Activate Account
-                                        </a>
                                     </div>
-                                </form>
+                                    <div class="form-group">
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-9">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+                                                        <option>Month</option>
+                                                        <option value="01">Jan (01)</option>
+                                                        <option value="02">Feb (02)</option>
+                                                        <option value="03">Mar (03)</option>
+                                                        <option value="04">Apr (04)</option>
+                                                        <option value="05">May (05)</option>
+                                                        <option value="06">June (06)</option>
+                                                        <option value="07">July (07)</option>
+                                                        <option value="08">Aug (08)</option>
+                                                        <option value="09">Sep (09)</option>
+                                                        <option value="10">Oct (10)</option>
+                                                        <option value="11">Nov (11)</option>
+                                                        <option value="12">Dec (12)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <select class="form-control" name="expiry-year">
+                                                        <option value="13">2013</option>
+                                                        <option value="14">2014</option>
+                                                        <option value="15">2015</option>
+                                                        <option value="16">2016</option>
+                                                        <option value="17">2017</option>
+                                                        <option value="18">2018</option>
+                                                        <option value="19">2019</option>
+                                                        <option value="20">2020</option>
+                                                        <option value="21">2021</option>
+                                                        <option value="22">2022</option>
+                                                        <option value="23">2023</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                            <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code">
+                                        </div>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="optionsCheckboxes" checked> I agree to the
+                                            <a href="#">terms and conditions.</a>
+                                        </label>
+                                    </div>
+
+                                </fieldset>
+                                <div class="text-center">
+                                    <a href="inbox.html" class="btn btn-primary btn-lg">Activate Account
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -181,24 +187,24 @@
                 <ul>
                     <li>
                         <a href="http://www.westfax.com">
-                            FaxForward
+                            &copy; 2017, WestFax
                         </a>
                     </li>
                     <li>
-                        <a href="about.html">
-                            About Us
+                        <a href="help.html">
+                            Help
                         </a>
                     </li>
                     <li>
-                        <a href="https://westfax.com/blog">
-                            Blog
+                        <a href="contact.html">
+                            Contact Us
                         </a>
                     </li>
 
                 </ul>
             </nav>
-            <div class="copyright pull-right">
-                &copy; 2017, FaxForward
+            <div class="pull-right">
+                <a href="tel:8004736208">(800) 473-6208</a>
             </div>
         </div>
     </footer>
