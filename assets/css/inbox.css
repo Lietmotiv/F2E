@@ -1,6 +1,4 @@
-.main{ 
-    margin-top:100px;
-}
+
 .nav-tabs .glyphicon:not(.no-margin) { margin-right:10px; }
 .tab-pane .list-group-item:first-child {border-top-right-radius: 0px;border-top-left-radius: 0px;}
 .tab-pane .list-group-item:last-child {border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;}
@@ -53,4 +51,11 @@ hr { margin-top: 5px;margin-bottom: 10px; }
 .jumbotron-dark-alt{
     background-color:#333;
     color:#fff;
+}
+.signupForm{
+
+    font-size:.7em !important;
+}
+.txt-red{
+    color:#e2383f !important;
 }

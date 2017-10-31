@@ -1609,10 +1609,9 @@ select.form-control {
 
 footer {
   padding: 15px 0;
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 80px; }
+  height: 80px;
+  z-index: 1030; }
   footer ul {
     margin-bottom: 0;
     padding: 0;
@@ -1650,7 +1649,7 @@ legend {
     position: relative;
     height: 50px;
     line-height: 30px;
-    padding: 10px 15px; }
+    padding: 0 15px; }
     .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
       color: inherit;
       background-color: transparent; }
@@ -1663,7 +1662,7 @@ legend {
     padding-top: 15px;
     padding-bottom: 15px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
     border-radius: 3px; }
     .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
@@ -1702,7 +1701,8 @@ legend {
   .navbar .navbar-collapse,
   .navbar .navbar-form {
     border-top: none;
-    box-shadow: none; }
+    box-shadow: none;
+    margin-top: 10px; }
   .navbar .navbar-nav > .open > a, .navbar .navbar-nav > .open > a:hover, .navbar .navbar-nav > .open > a:focus {
     background-color: transparent;
     color: inherit; }
@@ -2875,7 +2875,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .main {
   background: #FFFFFF;
   position: relative;
-  z-index: 3; }
+  z-index: 3;
+  display: block; }
 
 .main-raised {
   margin: -60px 30px 0px;
@@ -3000,6 +3001,10 @@ h2.title {
 .signup-page .navbar-transparent,
 .index-page .navbar-transparent {
   padding-top: 25px; }
+
+.wrapper {
+  padding-top: 120px;
+  padding-bottom: 80px; }
 
 @media (max-width: 991px) {
   .landing-page .header {

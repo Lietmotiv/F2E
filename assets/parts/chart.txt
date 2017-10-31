@@ -1,0 +1,27 @@
+	<script src="https://www.gstatic.com/charts/loader.js" type="text/javascript">
+	</script> 
+	<script type="text/javascript">
+	   google.charts.load('current', { 'packages': ['corechart'] });
+	   google.charts.setOnLoadCallback(drawChart);
+
+	   function drawChart() {
+
+	       var data = google.visualization.arrayToDataTable([
+	           ['Faxes', 'Quantity'],
+	           ['In', 309],
+	           ['Out', 94],
+	           ['Failed', 14]
+	       ]);
+
+	       var options = {
+	           title: 'Fax Usage'
+	       };
+
+	       var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+	       chart.draw(data, options);
+	   }
+	</script>
+
+
+    									<div id="piechart"></div>

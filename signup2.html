@@ -80,7 +80,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
-                        <form class="form bigForm" method="" action="" class="form-group">
+                        <form class="form signupForm" method="" action="" class="form-group">
                             <div class="content">
                                 <div class="page-header">
                                     <h3>Let's get some quick details</h3>
@@ -88,8 +88,7 @@
                                 <h5>Requested Fax Number:
                                     <strong>999-333-2222</strong>
                                 </h5>
-                                <p class="small">You have
-                                    <span id="timer" style="font-weight: bold">15:00</span> minutes to complete the form before this number is released.</p>
+
 
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -196,21 +195,7 @@
         });
     });
 
-    var mins = 15;  //Set the number of minutes you need
-    var secs = mins * 60;
-    var currentSeconds = 0;
-    var currentMinutes = 0;
-
-    setTimeout(Decrement, 1000);
-
-    function Decrement() {
-        currentMinutes = Math.floor(secs / 60);
-        currentSeconds = secs % 60;
-        if (currentSeconds <= 9) currentSeconds = "0" + currentSeconds;
-        secs--;
-        document.getElementById("timer").innerHTML = currentMinutes + ":" + currentSeconds; //Set the element id you need the time put into.
-        if (secs !== -1) setTimeout('Decrement()', 1000);
-    }
+    
 
 </script>
 
