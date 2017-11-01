@@ -54,8 +54,29 @@ hr { margin-top: 5px;margin-bottom: 10px; }
 }
 .signupForm{
 
-    font-size:.7em !important;
+    font-size:.9em !important;
 }
 .txt-red{
     color:#e2383f !important;
+}
+.wideRadio{
+    margin:10px 5px !important;
+}
+
+
+
+
+.clickable{
+    cursor: pointer;   
+}
+
+.panel-heading div {
+    margin-top: -18px;
+    font-size: 15px;
+}
+.panel-heading div span{
+    margin-left:5px;
+}
+.panel-body{
+    display: none;
 }

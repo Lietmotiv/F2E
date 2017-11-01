@@ -24,150 +24,138 @@
 </head>
 
 <body>
-    <!--Begin unregistered Nav-->
+    <!--Begin Registered Nav-->
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#FFFFFF;">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-
                 <a class="navbar-brand" href="http://f2e.8150.co">
-                    <img src="/assets/img/logos/WestFax_Color_100x300-300x100.png" class="img-responsive logo-md">
+                    <img class="img-responsive logo-md" src="/assets/img/logos/WestFax_Color_100x300-300x100.png">
                 </a>
             </div>
-
             <div class="collapse navbar-collapse" id="navigation">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="https://twitter.com/westfaxinc" target="_blank" class="btn btn-simple btn-white btn-just-icon" style="color:#0084b4">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/westfaxinc/" target="_blank" class="btn btn-simple btn-white btn-just-icon" style="color:#3b5998">
-                            <i class="fa fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/company/950687/" target="_blank" class="btn btn-simple btn-white btn-just-icon" style="color:#0077B5">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
 
                     <li>
-                        <a href="help.html" target="_blank">
-                            Help
-                        </a>
+                        <a href="how.html">How to use FaxForward</a>
                     </li>
                     <li>
-                        <a href="help.html" target="_blank">
-                            Contact Us
-                        </a>
-                    </li>
-
-                    <li class="rightNav">
-                        <a href="login.html">
+                        <a href="login.html" class="txt-red">
                             <strong>Login</strong>
                         </a>
-
                     </li>
+
                 </ul>
             </div>
         </div>
     </nav>
-    <!--End unregistered Nav-->
+    <!--End Registered Nav-->
     <div class="wrapper">
         <div class="main">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
+                    <div class="col-md-8 col-xs-offset-2 col-xs-12">
                         <form class="form signupForm" method="" action="">
-                            <div class="content">
-                                <div class="page-header">
-                                    <h3>Choose your Fax Number</h3>
+                            <div class="page-header">
+                                <h3>Choose your Fax Number</h3>
+                            </div>
+                            <div class="input-group">
+                                <strong>Search By:</strong>&nbsp;&nbsp;
+                                <input type="radio" name="searchBy" checked="checked"> Area Code &nbsp;&nbsp;
+                                <input type="radio" name="searchBy"> TollFree
+
+
+                                <div class="dropdown" style="padding-top:40px;">
+                                    <strong>Area Code:</strong>&nbsp;&nbsp;
+                                    <a href="#" class="btn-lg btn-simple dropdown-toggle" data-toggle="dropdown">
+                                        Choose
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu" style="margin-left: 78px;">
+                                        <li>
+                                            <a href="#">303</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">720</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">970</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="#">888 Toll Free</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="input-group">
-                                    <strong>Search By:</strong>&nbsp;&nbsp;
-                                    <input type="radio" name="searchBy" checked="checked"> Area Code &nbsp;&nbsp;
-                                    <input type="radio" name="searchBy"> TollFree
-                                    <br />
-
-                                    <div class="dropdown">
-                                        <strong>Area Code:</strong>&nbsp;&nbsp;
-                                        <a href="#" class="btn-lg btn-simple dropdown-toggle" data-toggle="dropdown">
-                                            Choose
-                                            <b class="caret"></b>
-                                        </a>
-                                        <ul class="dropdown-menu" style="margin-left: 78px;">
-                                            <li>
-                                                <a href="#">303</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">720</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">970</a>
-                                            </li>
-                                            <li class="divider"></li>
-                                            <li>
-                                                <a href="#">888 Toll Free</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <strong>Choose your number:</strong>&nbsp;&nbsp;
-                                    <br />
-                                    <input type="radio" name="faxNumber" checked="checked"> 303-111-2222&nbsp;&nbsp;
-                                    <input type="radio" name="faxNumber"> 303-111-2223&nbsp;&nbsp;
-                                    <input type="radio" name="faxNumber"> 303-111-2223&nbsp;&nbsp;
-                                    <input type="radio" name="faxNumber"> 303-111-2343&nbsp;&nbsp;
-                                    <br/>
-                                    <input type="radio" name="faxNumber"> 303-111-3493&nbsp;&nbsp;
-                                    <input type="radio" name="faxNumber"> 303-111-4943&nbsp;&nbsp;
+                                <br />
+                                <br />
+                                <strong>Choose your number:</strong>&nbsp;&nbsp;
+                                <br />
+                                <input class="wideRadio" type="radio" name="faxNumber" checked="checked"> 303-111-2222&nbsp;&nbsp;
+                                <input class="wideRadio"type="radio" name="faxNumber"> 303-111-2223&nbsp;&nbsp;
+                                <input class="wideRadio"type="radio" name="faxNumber"> 303-111-2223&nbsp;&nbsp;
+                                <input class="wideRadio"type="radio" name="faxNumber"> 303-111-2343&nbsp;&nbsp;
+                                <br/>
+                                <input class="wideRadio"type="radio" name="faxNumber"> 303-111-3493&nbsp;&nbsp;
+                                <input class="wideRadio"type="radio" name="faxNumber"> 303-111-4943&nbsp;&nbsp;
 
 
-                                    <br />
-                                    <p class="small">You have 15 minutes to complete the form before this number is released.</p>
-                                </div>
+                                <br />
+                                <p class="small">You have 15 minutes to complete the form before this number is released.</p>
                             </div>
                             <hr />
-                            <div class="footer text-center">
+                            <div class="text-center">
                                 <a href="signup2.html" class="btn btn-danger btn-lg">Continue
                                     <i class="material-icons">forward</i>
                                 </a>
                             </div>
                         </form>
                     </div>
+
                 </div>
+
+
             </div>
-
-
-
         </div>
     </div>
     <!--Footer-->
-    <footer class="footer" style="background-color:#EEEEEE">
+    <footer class="footer navbar-fixed-bottom" style="background-color:#EEEEEE">
         <div class="container">
             <nav class="pull-left">
                 <ul>
                     <li>
-                        <a href="http://www.westfax.com">
-                            &copy; 2017, WestFax
-                        </a>
+                        <a href="http://www.westfax.com">&copy; 2017, WestFax</a>
                     </li>
                     <li>
-                        <a href="help.html">
-                            Help
-                        </a>
+                        <a href="help.html">Help</a>
                     </li>
                     <li>
-                        <a href="contact.html">
-                            Contact Us
-                        </a>
+                        <a href="contact.html">Contact Us</a>
                     </li>
-
+                    <li>
+                        <a href="tel:8004736208">(800) 473-6208</a>
+                    </li>
                 </ul>
             </nav>
             <div class="pull-right">
-                <a href="tel:8004736208">(800) 473-6208</a>
+                <ul>
+                    <li>
+                        <a class="btn btn-simple btn-white btn-just-icon" href="https://twitter.com/westfaxinc" style="color:#0084b4" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn btn-simple btn-white btn-just-icon" href="https://www.facebook.com/westfaxinc/" style="color:#3b5998" target="_blank">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn btn-simple btn-white btn-just-icon" href="https://www.linkedin.com/company/950687/" style="color:#0077B5" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </footer>
