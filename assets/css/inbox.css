@@ -77,6 +77,9 @@ hr { margin-top: 5px;margin-bottom: 10px; }
 .panel-heading div span{
     margin-left:5px;
 }
-.panel-body{
+.panel-filter{
     display: none;
+    display: block;
+    padding-right: 40%;
+    padding-left: 18px;
 }

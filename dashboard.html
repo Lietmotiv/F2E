@@ -107,7 +107,6 @@
                                     <br>
                                     <a class="btn btn-danger btn-lg text-center" href="inbox.html" role="button">Go to Inbox</a>
                                     <br />
-                                    <a class="btn btn-primary btn-sm text-center" href="inbox.html" role="button">Send a Fax</a>
                                     <br />
                                 </p>
                             </div>
@@ -141,7 +140,7 @@
                         <div class="panel panel-primary filterable">
                             <!-- Default panel contents -->
                             <div class="panel-heading">
-                                <h3 class="panel-title">My Faxes</h3>
+                                <h3 class="panel-title">My Faxes <span class="small" style="color:#cccccc;"> (recent activity)</span></h3>
                                 <div class="pull-right">
                                     <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
                                         <i class="fa fa-filter"></i>
@@ -149,10 +148,11 @@
                                 </div>
                             </div>
                             <!-- Table -->
-                            <div class="panel-body table-responsive" style="max-height: 400px;width:100%;">
-                                <input type="text" class="form-control" id="fax-table-filter" data-action="filter" data-filters="#task-table" placeholder="Filter Faxes" />
+                            <div class="panel-filter" style="display:none;">
+                                <input type="text" class="form-control" id="fax-table-filter" data-action="filter" data-filters="#task-table" placeholder="Search" />
                             </div>
-                            <table class="table table-hover table-responsive" style="max-height: 400px;" id="task-table">
+                            <div class="panel-body table-responsive" style="max-height:210px;">
+                            <table class="table table-hover table-responsive" id="task-table">
 
                                 <tr>
                                     <td class="small">10/30/17 8:18pm</td>
@@ -290,6 +290,7 @@
                                         <strong>Header:</strong> COMPLIANCE DOCUMENT</td>
                                 </tr>
                             </table>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -434,9 +435,9 @@
                 var $this = $(this),
                     $panel = $this.parents('.panel');
 
-                $panel.find('.panel-body').slideToggle();
+                $panel.find('.panel-filter').slideToggle();
                 if ($this.css('display') != 'none') {
-                    $panel.find('.panel-body input').focus();
+                    $panel.find('.panel-filter input').focus();
                 }
             });
             $('[data-toggle="tooltip"]').tooltip();
