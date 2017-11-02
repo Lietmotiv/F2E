@@ -100,15 +100,15 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="panel panel-primary jumbotron-dark-alt">
-                            <div class="panel-body" style="display:block;">
-                                <p class="lead text-center">You have
-                                    <strong>4</strong> new faxes
-                                    <br>
+                            <div class="panel-body text-center" style="display:block;">
+                                <span class="lead text-center">You have <strong>4</strong> new faxes</span>
                                     <br>
                                     <a class="btn btn-danger btn-lg text-center" href="inbox.html" role="button">Go to Inbox</a>
                                     <br />
-                                    <br />
-                                </p>
+                                    <div class="col-md-12" style="padding-top:32px;">
+                                    <span class="txt-white small text-center">Your Fax # is</span>
+                                    <h5 class="txt-white text-center" style="padding:0;margin:0;"><strong>999-333-2222</strong></h3>
+                                    </div>
                             </div>
                             <div class="panel-footer text-right small txt-white jumbotron-dark-alt">
                                 Last updated:
@@ -116,12 +116,12 @@
                             </div>
                         </div>
                         <br />
-                        <div class="panel panel-primary">
+                        <div class="panel panel-primary panelUtil">
                             <div class="panel-heading">
                                 Quick Links
                             </div>
                             <div class="panel-body" style="display:block;">
-                                    <p class="lead text-center">
+                                <p class="lead text-center">
                                     <a class="small" href="profile.html">Account Settings</a>
                                     <br>
                                     <a class="small" href="newfax.html">Send New Fax</a>
@@ -140,7 +140,9 @@
                         <div class="panel panel-primary filterable">
                             <!-- Default panel contents -->
                             <div class="panel-heading">
-                                <h3 class="panel-title">My Faxes <span class="small" style="color:#cccccc;"> (recent activity)</span></h3>
+                                <h3 class="panel-title">My Faxes
+                                    <span class="small" style="color:#cccccc;"> (recent activity)</span>
+                                </h3>
                                 <div class="pull-right">
                                     <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
                                         <i class="fa fa-filter"></i>
@@ -149,165 +151,184 @@
                             </div>
                             <!-- Table -->
                             <div class="panel-filter" style="display:none;">
-                                <input type="text" class="form-control" id="fax-table-filter" data-action="filter" data-filters="#task-table" placeholder="Search" />
+                                <input type="text" class="form-control" id="fax-table-filter" data-action="filter" data-filters="#task-table" placeholder="Search"
+                                />
                             </div>
                             <div class="panel-body table-responsive" style="max-height:210px;">
-                            <table class="table table-hover table-responsive" id="task-table">
+                                <table class="table table-hover table-responsive" id="task-table">
 
-                                <tr>
-                                    <td class="small">10/30/17 8:18pm</td>
-                                    <td>
-                                        <a href="inbox.html">
-                                            <i aria-hidden="true" class="fa fa-sign-in"></i> Incoming Fax</a>
-                                    </td>
-                                    <td>989-299-3233 |
-                                        <strong>Header:</strong> MED PAYMENT FORM</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/31/17 2:18am</td>
-                                    <td>
-                                        <a href="sent.html">
-                                            <i aria-hidden="true" class="fa fa-sign-out"></i> Outbound Fax</a>
-                                    </td>
-                                    <td>513-299-3948 |
-                                        <strong>Header:</strong> REPLY TO MARK</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/30/17 2:44am</td>
-                                    <td>
-                                        <a href="inbox.html">
-                                            <i aria-hidden="true" class="fa fa-sign-in"></i> Incoming Fax</a>
-                                    </td>
-                                    <td>201-299-4890 |
-                                        <strong>Header:</strong> LEGAL OPTIONS RE: ACME</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/30/17 9:43am</td>
-                                    <td>
-                                        <a href="sent.html">
-                                            <i aria-hidden="true" class="fa fa-sign-out"></i> Outbound Fax</a>
-                                    </td>
-                                    <td>202-433-8943 |
-                                        <strong>Header:</strong> TOM SULLIVAN RESUME</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/30/17 9:44am</td>
-                                    <td>
-                                        <a href="#">
-                                            <i aria-hidden="true" class="fa fa-exclamation-triangle"></i> Send Failure</a>
-                                    </td>
-                                    <td>202-433-8233 |
-                                        <strong>Header:</strong> COMPLIANCE DOCUMENT</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/30/17 8:18pm</td>
-                                    <td>
-                                        <a href="inbox.html">
-                                            <i aria-hidden="true" class="fa fa-sign-in"></i> Incoming Fax</a>
-                                    </td>
-                                    <td>989-299-3233 |
-                                        <strong>Header:</strong> MED PAYMENT FORM</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/31/17 2:18am</td>
-                                    <td>
-                                        <a href="sent.html">
-                                            <i aria-hidden="true" class="fa fa-sign-out"></i> Outbound Fax</a>
-                                    </td>
-                                    <td>513-299-3948 |
-                                        <strong>Header:</strong> REPLY TO MARK</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/30/17 2:44am</td>
-                                    <td>
-                                        <a href="inbox.html">
-                                            <i aria-hidden="true" class="fa fa-sign-in"></i> Incoming Fax</a>
-                                    </td>
-                                    <td>201-299-4890 |
-                                        <strong>Header:</strong> LEGAL OPTIONS RE: ACME</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/30/17 9:43am</td>
-                                    <td>
-                                        <a href="sent.html">
-                                            <i aria-hidden="true" class="fa fa-sign-out"></i> Outbound Fax</a>
-                                    </td>
-                                    <td>202-433-8943 |
-                                        <strong>Header:</strong> TOM SULLIVAN RESUME</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/30/17 9:44am</td>
-                                    <td>
-                                        <a href="#">
-                                            <i aria-hidden="true" class="fa fa-exclamation-triangle"></i> Send Failure</a>
-                                    </td>
-                                    <td>202-433-8233 |
-                                        <strong>Header:</strong> COMPLIANCE DOCUMENT</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/30/17 8:18pm</td>
-                                    <td>
-                                        <a href="inbox.html">
-                                            <i aria-hidden="true" class="fa fa-sign-in"></i> Incoming Fax</a>
-                                    </td>
-                                    <td>989-299-3233 |
-                                        <strong>Header:</strong> MED PAYMENT FORM</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/31/17 2:18am</td>
-                                    <td>
-                                        <a href="sent.html">
-                                            <i aria-hidden="true" class="fa fa-sign-out"></i> Outbound Fax</a>
-                                    </td>
-                                    <td>513-299-3948 |
-                                        <strong>Header:</strong> REPLY TO MARK</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/30/17 2:44am</td>
-                                    <td>
-                                        <a href="inbox.html">
-                                            <i aria-hidden="true" class="fa fa-sign-in"></i> Incoming Fax</a>
-                                    </td>
-                                    <td>201-299-4890 |
-                                        <strong>Header:</strong> LEGAL OPTIONS RE: ACME</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/30/17 9:43am</td>
-                                    <td>
-                                        <a href="sent.html">
-                                            <i aria-hidden="true" class="fa fa-sign-out"></i> Outbound Fax</a>
-                                    </td>
-                                    <td>202-433-8943 |
-                                        <strong>Header:</strong> TOM SULLIVAN RESUME</td>
-                                </tr>
-                                <tr>
-                                    <td class="small">10/30/17 9:44am</td>
-                                    <td>
-                                        <a href="#">
-                                            <i aria-hidden="true" class="fa fa-exclamation-triangle"></i> Send Failure</a>
-                                    </td>
-                                    <td>202-433-8233 |
-                                        <strong>Header:</strong> COMPLIANCE DOCUMENT</td>
-                                </tr>
-                            </table>
-                        </div>
+                                    <tr>
+                                        <td class="small">10/30/17 8:18pm</td>
+                                        <td>
+                                            <a href="inbox.html">
+                                                <i aria-hidden="true" class="fa fa-sign-in"></i> Incoming Fax</a>
+                                        </td>
+                                        <td>989-299-3233 |
+                                            <strong>Header:</strong> MED PAYMENT FORM</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/31/17 2:18am</td>
+                                        <td>
+                                            <a href="sent.html">
+                                                <i aria-hidden="true" class="fa fa-sign-out"></i> Outbound Fax</a>
+                                        </td>
+                                        <td>513-299-3948 |
+                                            <strong>Header:</strong> REPLY TO MARK</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/30/17 2:44am</td>
+                                        <td>
+                                            <a href="inbox.html">
+                                                <i aria-hidden="true" class="fa fa-sign-in"></i> Incoming Fax</a>
+                                        </td>
+                                        <td>201-299-4890 |
+                                            <strong>Header:</strong> LEGAL OPTIONS RE: ACME</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/30/17 9:43am</td>
+                                        <td>
+                                            <a href="sent.html">
+                                                <i aria-hidden="true" class="fa fa-sign-out"></i> Outbound Fax</a>
+                                        </td>
+                                        <td>202-433-8943 |
+                                            <strong>Header:</strong> TOM SULLIVAN RESUME</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/30/17 9:44am</td>
+                                        <td>
+                                            <a href="#">
+                                                <i aria-hidden="true" class="fa fa-exclamation-triangle"></i> Send Failure</a>
+                                        </td>
+                                        <td>202-433-8233 |
+                                            <strong>Header:</strong> COMPLIANCE DOCUMENT</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/30/17 8:18pm</td>
+                                        <td>
+                                            <a href="inbox.html">
+                                                <i aria-hidden="true" class="fa fa-sign-in"></i> Incoming Fax</a>
+                                        </td>
+                                        <td>989-299-3233 |
+                                            <strong>Header:</strong> MED PAYMENT FORM</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/31/17 2:18am</td>
+                                        <td>
+                                            <a href="sent.html">
+                                                <i aria-hidden="true" class="fa fa-sign-out"></i> Outbound Fax</a>
+                                        </td>
+                                        <td>513-299-3948 |
+                                            <strong>Header:</strong> REPLY TO MARK</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/30/17 2:44am</td>
+                                        <td>
+                                            <a href="inbox.html">
+                                                <i aria-hidden="true" class="fa fa-sign-in"></i> Incoming Fax</a>
+                                        </td>
+                                        <td>201-299-4890 |
+                                            <strong>Header:</strong> LEGAL OPTIONS RE: ACME</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/30/17 9:43am</td>
+                                        <td>
+                                            <a href="sent.html">
+                                                <i aria-hidden="true" class="fa fa-sign-out"></i> Outbound Fax</a>
+                                        </td>
+                                        <td>202-433-8943 |
+                                            <strong>Header:</strong> TOM SULLIVAN RESUME</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/30/17 9:44am</td>
+                                        <td>
+                                            <a href="#">
+                                                <i aria-hidden="true" class="fa fa-exclamation-triangle"></i> Send Failure</a>
+                                        </td>
+                                        <td>202-433-8233 |
+                                            <strong>Header:</strong> COMPLIANCE DOCUMENT</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/30/17 8:18pm</td>
+                                        <td>
+                                            <a href="inbox.html">
+                                                <i aria-hidden="true" class="fa fa-sign-in"></i> Incoming Fax</a>
+                                        </td>
+                                        <td>989-299-3233 |
+                                            <strong>Header:</strong> MED PAYMENT FORM</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/31/17 2:18am</td>
+                                        <td>
+                                            <a href="sent.html">
+                                                <i aria-hidden="true" class="fa fa-sign-out"></i> Outbound Fax</a>
+                                        </td>
+                                        <td>513-299-3948 |
+                                            <strong>Header:</strong> REPLY TO MARK</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/30/17 2:44am</td>
+                                        <td>
+                                            <a href="inbox.html">
+                                                <i aria-hidden="true" class="fa fa-sign-in"></i> Incoming Fax</a>
+                                        </td>
+                                        <td>201-299-4890 |
+                                            <strong>Header:</strong> LEGAL OPTIONS RE: ACME</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/30/17 9:43am</td>
+                                        <td>
+                                            <a href="sent.html">
+                                                <i aria-hidden="true" class="fa fa-sign-out"></i> Outbound Fax</a>
+                                        </td>
+                                        <td>202-433-8943 |
+                                            <strong>Header:</strong> TOM SULLIVAN RESUME</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">10/30/17 9:44am</td>
+                                        <td>
+                                            <a href="#">
+                                                <i aria-hidden="true" class="fa fa-exclamation-triangle"></i> Send Failure</a>
+                                        </td>
+                                        <td>202-433-8233 |
+                                            <strong>Header:</strong> COMPLIANCE DOCUMENT</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!--hidden for now.-->
-                <div class="row" style="display:none;">
-                    <div class="col-md-4">
-                        <div class="panel panel-primary">
+                    <div class="col-md-3" style="padding-top:22px;">
+                        <div class="panel panel-primary panelUtil">
                             <div class="panel-heading">
                                 Account Usage
                             </div>
                             <div class="panel-body">
-                                <div id="piechart"></div>
-
+                                <table class="table table-responsive table">
+                                    <tr>
+                                        <td>
+                                            <strong>Total Faxes (in/out)</strong>
+                                        </td>
+                                        <td>399</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Faxes Inbound</strong>
+                                        </td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Faxes Outbound</strong>
+                                        </td>
+                                        <td>199</td>
+                                    </tr>
+                                </table>
+  
+                                      
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -370,40 +391,10 @@
     <!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
     <script src="/assets/js/material-kit.js" type="text/javascript">
     </script>
-    <!--Google Charts-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-        // Load google charts
-        google.charts.load('current', { 'packages': ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
-
-        // Draw the chart and set the chart values
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['Faxes', 'Usage'],
-                ['Sent', 18],
-                ['Rcvd', 22],
-                ['Fail', 3]
-            ]);
-
-            // Optional; add a title and set the width and height of the chart
-            var options = { 'title': 'Usage Stats', 'width': 300, 'height': 300 };
-
-            // Display the chart inside the <div> element with id="piechart"
-            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-            chart.draw(data, options);
-        }
 
 
-        /**
-        *   I don't recommend using this plugin on large tables, I just wrote it to make the demo useable. It will work fine for smaller tables 
-        *   but will likely encounter performance issues on larger tables.
-        *
-        *		<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Filter Developers" />
-        *		$(input-element).filterTable()
-        *		
-        *	The important attributes are 'data-action="filter"' and 'data-filters="#table-selector"'
-        */
+        /* Filter / Search function */
         (function () {
             'use strict';
             var $ = jQuery;
@@ -443,7 +434,7 @@
             $('[data-toggle="tooltip"]').tooltip();
         })
 
-       
+
 
     </script>
 
