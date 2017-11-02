@@ -83,3 +83,20 @@ hr { margin-top: 5px;margin-bottom: 10px; }
     padding-right: 40%;
     padding-left: 18px;
 }
+
+.panelUtil{
+    min-height: 275px !important;
+}
+/*hide detail until clicked */
+.fax-detail{
+    display:none;
+    border-top: 1px dotted #222;
+    padding:10px;
+    background-color: #FFFFFF;
+    
+}
+.fax-meta{
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 24px;
+}
