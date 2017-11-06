@@ -67,7 +67,10 @@ hr { margin-top: 5px;margin-bottom: 10px; }
     font-weight:800;
 }
 
-
+#task-table
+{
+    font-weight: bold;
+}
 
 .clickable{
     cursor: pointer;   
@@ -136,4 +139,30 @@ hr { margin-top: 5px;margin-bottom: 10px; }
 #navigation > ul > li:nth-child(3){
 
     display:none !important;
+}
+.material-icons.md-12 { font-size: 12px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.md-red { color:#e2383f  }
+.material-icons.md-white { color:#FFFFFF  }
+
+.material-icons.md-black { color: rgb(0, 0, 0); }
+
+
+.mirror {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+}
+
+.pdfViewer{
+    width:75%;
+    margin: auto;
+}
+.txt-white, .txt-white:hover{
+    color:#FFFFFF;
 }
