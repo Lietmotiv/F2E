@@ -136,7 +136,7 @@
 							<div class="col-md-3 col-sm-4 col-lg-2">
 								<ul class="nav nav-tabs" style="background-color:#ff0000;">
 									<li>
-										<a href="#send" data-toggle="tab">
+										<a href="#send" data-toggle="modal" data-target="#send">
 											<i class="material-icons">note_add</i> Send Fax
 										</a>
 									</li>
@@ -154,22 +154,25 @@
 											<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Incoming Fax">
 												<i aria-hidden="true" class="fa fa-sign-in"></i> 999-222-3333 </div>
 											<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
-												<span class="">Medical Documents</span>
+												<span class="">Medical Documents - Version 1</span>
 												<span class="text-muted" style="font-size: 11px;"> (4 pages)</span>
 											</div>
-											<div class="col-md-2 col-sm-3 col-lg-2 col-xs-3">
+											<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+												<span class="dateRight">&nbsp;11:24am</span>
+											</div>
+											<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
 												<a href="#" title="Delete Fax" data-toggle="tooltip">
 													<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
 												</a>&nbsp;</span>
 												<a href="#" title="Forward as Fax" data-toggle="tooltip">
 													<span class="fa fa-share">&nbsp;</span>
 												</a>
-												<span class="dateRight">&nbsp;11:24am</span>
 											</div>
+
 										</div>
 										<div class="row fax-detail" id="fax0001">
 											<div class="col-xs-8 col-sm-9 col-md-10 col-lg-10 fax-meta">
-												<strong>RECEIVED:</strong> 10/21/17 - 12:10PM ET
+												<strong>RECEIVED:</strong> 10/30/17 - 12:10PM ET
 												<br />
 												<strong>FROM:</strong> 999-222-3333 - (4 Pages)
 												<br />
@@ -184,24 +187,34 @@
 										</div>
 									</li>
 									<li class="list-group-item  fax-item" rel="fax0002">
-										<span class="name" style="min-width: 120px;display: inline-block;">999-222-3333 </span>
-										<span class="">&lt;NO HEADER&gt;</span>
-										<span class="text-muted" style="font-size: 11px;"> (1 page)</span>
-										<a href="#" title="Delete Fax" data-toggle="tooltip">
-											<span class="fa fa-trash" style="float:right;padding-left:5px;color:red;" onclick="alert('are you sure?');">&nbsp;</span>
-										</a>
-										<a href="#" title="Forward as Fax" data-toggle="tooltip">
-											<span class="fa fa-share" style="float:right;">&nbsp;</span>
-										</a>
-										<span class="dateRight">&nbsp;11:22am</span>
+										<div class="row">
+											<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Incoming Fax">
+												<i aria-hidden="true" class="fa fa-sign-in"></i> 999-222-3333 </div>
+											<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+												<span class="">Medical Documents - Version 2</span>
+												<span class="text-muted" style="font-size: 11px;"> (4 pages)</span>
+											</div>
+											<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+												<span class="dateRight">&nbsp;11:24am</span>
+											</div>
+											<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+												<a href="#" title="Delete Fax" data-toggle="tooltip">
+													<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+												</a>&nbsp;</span>
+												<a href="#" title="Forward as Fax" data-toggle="tooltip">
+													<span class="fa fa-share">&nbsp;</span>
+												</a>
+											</div>
+
+										</div>
 										<div class="row fax-detail" id="fax0002">
-											<div class="col-md-10 fax-meta">
-												<strong>RECEIVED:</strong> 10/21/17 - 12:10PM ET
+											<div class="col-xs-8 col-sm-9 col-md-10 col-lg-10 fax-meta">
+												<strong>RECEIVED:</strong> 10/29/17 - 12:10PM ET
 												<br />
 												<strong>FROM:</strong> 999-222-3333 - (4 Pages)
 												<br />
 												<strong>CSID:</strong> MEDFAX001A</div>
-											<div class="col-md-2 pull-right">
+											<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
 												<div class="btn-group">
 													<button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 														Actions
@@ -226,24 +239,34 @@
 										</div>
 									</li>
 									<li class="list-group-item  fax-item" rel="fax0003">
-										<span class="name" style="min-width: 120px;display: inline-block;">999-222-3333 </span>
-										<span class="">Mike Jones Resume</span>
-										<span class="text-muted" style="font-size: 11px;"> (2 pages)</span>
-										<a href="#" title="Delete Fax" data-toggle="tooltip">
-											<span class="fa fa-trash" style="float:right;padding-left:5px;color:red;" onclick="alert('are you sure?');">&nbsp;</span>
-										</a>
-										<a href="#" title="Forward as Fax" data-toggle="tooltip">
-											<span class="fa fa-share" style="float:right;">&nbsp;</span>
-										</a>
-										<span class="dateRight">&nbsp;10/21/17</span>
+										<div class="row">
+											<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Incoming Fax">
+												<i aria-hidden="true" class="fa fa-sign-in"></i> 999-222-3333 </div>
+											<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+												<span class="">Medical Documents - Version 3</span>
+												<span class="text-muted" style="font-size: 11px;"> (4 pages)</span>
+											</div>
+											<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+												<span class="dateRight">&nbsp;9:48am</span>
+											</div>
+											<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+												<a href="#" title="Delete Fax" data-toggle="tooltip">
+													<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+												</a>&nbsp;</span>
+												<a href="#" title="Forward as Fax" data-toggle="tooltip">
+													<span class="fa fa-share">&nbsp;</span>
+												</a>
+											</div>
+
+										</div>
 										<div class="row fax-detail" id="fax0003">
-											<div class="col-md-7 fax-meta">
-												<strong>RECEIVED:</strong> 10/21/17 - 12:10PM ET
+											<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 fax-meta">
+												<strong>RECEIVED:</strong> 10/29/17 - 9:48AM ET
 												<br />
 												<strong>FROM:</strong> 999-222-3333 - (4 Pages)
 												<br />
 												<strong>CSID:</strong> MEDFAX001A</div>
-											<div class="col-md-5 pull-right text-right">
+											<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 text-right">
 												<a href="#">
 													<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD</a>&nbsp;&nbsp;&nbsp;
 												<a href="#">
@@ -254,164 +277,469 @@
 											</div>
 										</div>
 									</li>
-									<li class="list-group-item fax-item" rel="fax0004">
-										<span class="name" style="min-width: 120px;display: inline-block;">999-222-3333 </span>
-										<span class="">Medical Documents</span>
-										<span class="text-muted" style="font-size: 11px;"> (4 pages)</span>
-										<a href="#" title="Delete Fax" data-toggle="tooltip">
-											<span class="fa fa-trash" style="float:right;padding-left:5px;color:red;" onclick="alert('are you sure?');">&nbsp;</span>
-										</a>
-										<a href="#" title="Forward as Fax" data-toggle="tooltip">
-											<span class="fa fa-share" style="float:right;">&nbsp;</span>
-										</a>
-										<span class="dateRight">&nbsp;10/21/17</span>
+									<li class="list-group-item  fax-item" rel="fax0004">
+										<div class="row">
+											<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Outgoing Fax">
+												<i aria-hidden="true" class="fa fa-sign-out"></i> 303-555-1212 </div>
+											<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+												<span class="">Thomas Resume v1</span>
+												<span class="text-muted" style="font-size: 11px;"> (2 pages)</span>
+											</div>
+											<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+												<span class="dateRight">&nbsp;10/25</span>
+											</div>
+											<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+												<a href="#" title="Delete Fax" data-toggle="tooltip">
+													<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+												</a>&nbsp;</span>
+												<a href="#" title="Forward as Fax" data-toggle="tooltip">
+													<span class="fa fa-share">&nbsp;</span>
+												</a>
+											</div>
+
+										</div>
 										<div class="row fax-detail" id="fax0004">
-											<div class="col-md-10 fax-meta">
-												<strong>RECEIVED:</strong> 10/21/17 - 12:10PM ET
+											<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 fax-meta">
+												<strong>SENT:</strong> 10/21/17 - 1:24PM ET
 												<br />
-												<strong>FROM:</strong> 999-222-3333 - (4 Pages)
+												<strong>TO:</strong> 303-555-1212 - (2 Pages)
 												<br />
 												<strong>CSID:</strong> MEDFAX001A</div>
-											<div class="col-md-2 pull-right">
-												<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD
-												<br />
-												<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF
-												<br />
-												<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW
+											<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 text-right">
+												<a href="#">
+													<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD</a>&nbsp;&nbsp;&nbsp;
+												<a href="#">
+													<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF</a>&nbsp;&nbsp;&nbsp;
+
+												<a href="#">
+													<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW PDF</a>
 											</div>
 										</div>
 									</li>
-									<li class="list-group-item fax-item" rel="fax0005">
-										<span class="name" style="min-width: 120px;display: inline-block;">999-222-3333 </span>
-										<span class="">&lt;NO HEADER&Gt; </span>
-										<span class="text-muted" style="font-size: 11px;"> (1 page)</span>
-										<a href="#" title="Delete Fax" data-toggle="tooltip">
-											<span class="fa fa-trash" style="float:right;padding-left:5px;color:red;" onclick="alert('are you sure?');">&nbsp;</span>
-										</a>
-										<a href="#" title="Forward as Fax" data-toggle="tooltip">
-											<span class="fa fa-share" style="float:right;">&nbsp;</span>
-										</a>
-										<span class="dateRight">&nbsp;10/22/17</span>
+									<li class="list-group-item  fax-item" rel="fax0005">
+										<div class="row">
+											<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Incoming Fax">
+												<i aria-hidden="true" class="fa fa-sign-in"></i> 202-555-3333 </div>
+											<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+												<span class="">Bank Statements</span>
+												<span class="text-muted" style="font-size: 11px;"> (4 pages)</span>
+											</div>
+											<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+												<span class="dateRight">&nbsp;10/24</span>
+											</div>
+											<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+												<a href="#" title="Delete Fax" data-toggle="tooltip">
+													<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+												</a>&nbsp;</span>
+												<a href="#" title="Forward as Fax" data-toggle="tooltip">
+													<span class="fa fa-share">&nbsp;</span>
+												</a>
+											</div>
+
+										</div>
 										<div class="row fax-detail" id="fax0005">
-											<div class="col-md-10 fax-meta">
-												<strong>RECEIVED:</strong> 10/21/17 - 12:10PM ET
+											<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 fax-meta">
+												<strong>RECEIVED:</strong> 10/24 11:24AM ET
 												<br />
-												<strong>FROM:</strong> 999-222-3333 - (4 Pages)
+												<strong>FROM:</strong> 202-555-3333 - (4 Pages)
 												<br />
-												<strong>CSID:</strong> MEDFAX001A</div>
-											<div class="col-md-2 pull-right">
-												<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD
-												<br />
-												<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF
-												<br />
-												<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW
+												<strong>CSID:</strong> BANK STATEMENTS DEC 16 </div>
+											<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 text-right">
+												<a href="#">
+													<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD</a>&nbsp;&nbsp;&nbsp;
+												<a href="#">
+													<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF</a>&nbsp;&nbsp;&nbsp;
+
+												<a href="#">
+													<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW PDF</a>
 											</div>
 										</div>
-
 									</li>
-									<li class="list-group-item fax-item" rel="fax0006">
-										<span class="name" style="min-width: 120px;display: inline-block;">999-222-3333 </span>
-										<span class="">Mike Jones Resume</span>
-										<span class="text-muted" style="font-size: 11px;"> (2 pages)</span>
-										<a href="#" title="Delete Fax" data-toggle="tooltip">
-											<span class="fa fa-trash" style="float:right;padding-left:5px;color:red;" onclick="alert('are you sure?');">&nbsp;</span>
-										</a>
-										<a href="#" title="Forward as Fax" data-toggle="tooltip">
-											<span class="fa fa-share" style="float:right;">&nbsp;</span>
-										</a>
-										<span class="dateRight">&nbsp;10/23/17</span>
+									<li class="list-group-item  fax-item" rel="fax0006">
+										<div class="row">
+											<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Incoming Fax">
+												<i aria-hidden="true" class="fa fa-sign-in"></i> 970-555-3333 </div>
+											<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+												<span class="">Reports v1</span>
+												<span class="text-muted" style="font-size: 11px;"> (8 pages)</span>
+											</div>
+											<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+												<span class="dateRight">&nbsp;10/23</span>
+											</div>
+											<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+												<a href="#" title="Delete Fax" data-toggle="tooltip">
+													<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+												</a>&nbsp;</span>
+												<a href="#" title="Forward as Fax" data-toggle="tooltip">
+													<span class="fa fa-share">&nbsp;</span>
+												</a>
+											</div>
+
+										</div>
 										<div class="row fax-detail" id="fax0006">
-											<div class="col-md-10 fax-meta">
-												<strong>RECEIVED:</strong> 10/21/17 - 12:10PM ET
+											<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 fax-meta">
+												<strong>RECEIVED:</strong> 10/23 10:19AM ET
 												<br />
-												<strong>FROM:</strong> 999-222-3333 - (4 Pages)
+												<strong>FROM:</strong> 970-555-3333 - (8 Pages)
 												<br />
-												<strong>CSID:</strong> MEDFAX001A</div>
-											<div class="col-md-2 pull-right">
-												<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD
-												<br />
-												<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF
-												<br />
-												<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW
+												<strong>CSID:</strong> Reports v1 </div>
+											<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 text-right">
+												<a href="#">
+													<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD</a>&nbsp;&nbsp;&nbsp;
+												<a href="#">
+													<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF</a>&nbsp;&nbsp;&nbsp;
+
+												<a href="#">
+													<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW PDF</a>
 											</div>
 										</div>
-
 									</li>
-									<li class="list-group-item fax-item" rel="fax0007">
-										<span class="name" style="min-width: 120px;display: inline-block;">999-222-3333 </span>
-										<span class="">Medical Documents</span>
-										<span class="text-muted" style="font-size: 11px;"> (4 pages)</span>
-										<a href="#" title="Delete Fax" data-toggle="tooltip">
-											<span class="fa fa-trash" style="float:right;padding-left:5px;color:red;" onclick="alert('are you sure?');">&nbsp;</span>
-										</a>
-										<a href="#" title="Forward as Fax" data-toggle="tooltip">
-											<span class="fa fa-share" style="float:right;">&nbsp;</span>
-										</a>
-										<span class="dateRight">&nbsp;10/21/17</span>
+									<li class="list-group-item  fax-item" rel="fax0007">
+										<div class="row">
+											<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Outgoing Fax">
+												<i aria-hidden="true" class="fa fa-sign-out"></i> 202-555-1212 </div>
+											<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+												<span class="">Bank Release document</span>
+												<span class="text-muted" style="font-size: 11px;"> (4 pages)</span>
+											</div>
+											<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+												<span class="dateRight">&nbsp;10/22</span>
+											</div>
+											<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+												<a href="#" title="Delete Fax" data-toggle="tooltip">
+													<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+												</a>&nbsp;</span>
+												<a href="#" title="Forward as Fax" data-toggle="tooltip">
+													<span class="fa fa-share">&nbsp;</span>
+												</a>
+											</div>
+
+										</div>
 										<div class="row fax-detail" id="fax0007">
-											<div class="col-md-10 fax-meta">
-												<strong>RECEIVED:</strong> 10/21/17 - 12:10PM ET
+											<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 fax-meta">
+												<strong>SENT:</strong> 10/22 5:04PM ET
 												<br />
-												<strong>FROM:</strong> 999-222-3333 - (4 Pages)
+												<strong>TO:</strong> 202-555-1212, 202-555-1111, 202-490-4990 - (2 Pages)
 												<br />
-												<strong>CSID:</strong> MEDFAX001A</div>
-											<div class="col-md-2 pull-right">
-												<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD
-												<br />
-												<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF
-												<br />
-												<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW
+												<strong>CSID:</strong> BANK RELEASE DC</div>
+											<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 text-right">
+												<a href="#">
+													<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD</a>&nbsp;&nbsp;&nbsp;
+												<a href="#">
+													<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF</a>&nbsp;&nbsp;&nbsp;
+
+												<a href="#">
+													<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW PDF</a>
 											</div>
 										</div>
-
 									</li>
-									<li class="list-group-item fax-item" rel="fax0008">
-										<span class="name" style="min-width: 120px;display: inline-block;">999-222-3333 </span>
-										<span class="">&lt;NO HEADER&Gt; </span>
-										<span class="text-muted" style="font-size: 11px;"> (1 page)</span>
-										<a href="#" title="Delete Fax" data-toggle="tooltip">
-											<span class="fa fa-trash" style="float:right;padding-left:5px;color:red;" onclick="alert('are you sure?');">&nbsp;</span>
-										</a>
-										<a href="#" title="Forward as Fax" data-toggle="tooltip">
-											<span class="fa fa-share" style="float:right;">&nbsp;</span>
-										</a>
-										<span class="dateRight">&nbsp;10/22/17</span>
-										<div class="row fax-detail" id="fax0008">
-											<div class="col-md-10 fax-meta">
-												<strong>RECEIVED:</strong> 10/21/17 - 12:10PM ET
-												<br />
-												<strong>FROM:</strong> 999-222-3333 - (4 Pages)
-												<br />
-												<strong>CSID:</strong> MEDFAX001A</div>
-											<div class="col-md-2 pull-right">
-												<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD
-												<br />
-												<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF
-												<br />
-												<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW
-											</div>
-										</div>
 
-									</li>
 								</ul>
 							</div>
 							<div class="tab-pane fade in" id="incoming">
-								<div class="list-group">
-									<div class="list-group-item">
-										<span class="text-center">Incoming</span>
-									</div>
-								</div>
+								<ul class="list-group">
+									<ul class="list-group">
+
+										<li class="list-group-item fax-item" rel="fax000i1">
+											<div class="row">
+												<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Incoming Fax">
+													<i aria-hidden="true" class="fa fa-sign-in"></i> 999-222-3333 </div>
+												<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+													<span class="">Medical Documents - Version 1</span>
+													<span class="text-muted" style="font-size: 11px;"> (4 pages)</span>
+												</div>
+												<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+													<span class="dateRight">&nbsp;11:24am</span>
+												</div>
+												<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+													<a href="#" title="Delete Fax" data-toggle="tooltip">
+														<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+													</a>&nbsp;</span>
+													<a href="#" title="Forward as Fax" data-toggle="tooltip">
+														<span class="fa fa-share">&nbsp;</span>
+													</a>
+												</div>
+
+											</div>
+											<div class="row fax-detail" id="fax000i1">
+												<div class="col-xs-8 col-sm-9 col-md-10 col-lg-10 fax-meta">
+													<strong>RECEIVED:</strong> 10/30/17 - 12:10PM ET
+													<br />
+													<strong>FROM:</strong> 999-222-3333 - (4 Pages)
+													<br />
+													<strong>CSID:</strong> MEDFAX001A</div>
+												<div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 pull-right">
+													<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD
+													<br />
+													<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF
+													<br />
+													<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW
+												</div>
+											</div>
+										</li>
+										<li class="list-group-item  fax-item" rel="fax000i2">
+											<div class="row">
+												<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Incoming Fax">
+													<i aria-hidden="true" class="fa fa-sign-in"></i> 999-222-3333 </div>
+												<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+													<span class="">Medical Documents - Version 2</span>
+													<span class="text-muted" style="font-size: 11px;"> (4 pages)</span>
+												</div>
+												<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+													<span class="dateRight">&nbsp;11:24am</span>
+												</div>
+												<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+													<a href="#" title="Delete Fax" data-toggle="tooltip">
+														<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+													</a>&nbsp;</span>
+													<a href="#" title="Forward as Fax" data-toggle="tooltip">
+														<span class="fa fa-share">&nbsp;</span>
+													</a>
+												</div>
+
+											</div>
+											<div class="row fax-detail" id="fax000i2">
+												<div class="col-xs-8 col-sm-9 col-md-10 col-lg-10 fax-meta">
+													<strong>RECEIVED:</strong> 10/29/17 - 12:10PM ET
+													<br />
+													<strong>FROM:</strong> 999-222-3333 - (4 Pages)
+													<br />
+													<strong>CSID:</strong> MEDFAX001A</div>
+												<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+													<div class="btn-group">
+														<button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															Actions
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu">
+															<li>
+																<a href="#">
+																	<i class="fa fa-download" aria-hidden="true"></i> Download PDF</a>
+															</li>
+															<li>
+																<a href="#">
+																	<i class="fa fa-envelope" aria-hidden="true"></i> Email PDF</a>
+															</li>
+															<li>
+																<a href="#">
+																	<i class="fa fa-file-text-o" aria-hidden="true"></i> View PDF</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="list-group-item  fax-item" rel="fax000i3">
+											<div class="row">
+												<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Incoming Fax">
+													<i aria-hidden="true" class="fa fa-sign-in"></i> 999-222-3333 </div>
+												<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+													<span class="">Medical Documents - Version 3</span>
+													<span class="text-muted" style="font-size: 11px;"> (4 pages)</span>
+												</div>
+												<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+													<span class="dateRight">&nbsp;9:48am</span>
+												</div>
+												<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+													<a href="#" title="Delete Fax" data-toggle="tooltip">
+														<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+													</a>&nbsp;</span>
+													<a href="#" title="Forward as Fax" data-toggle="tooltip">
+														<span class="fa fa-share">&nbsp;</span>
+													</a>
+												</div>
+
+											</div>
+											<div class="row fax-detail" id="fax000i3">
+												<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 fax-meta">
+													<strong>RECEIVED:</strong> 10/29/17 - 9:48AM ET
+													<br />
+													<strong>FROM:</strong> 999-222-3333 - (4 Pages)
+													<br />
+													<strong>CSID:</strong> MEDFAX001A</div>
+												<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 text-right">
+													<a href="#">
+														<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD</a>&nbsp;&nbsp;&nbsp;
+													<a href="#">
+														<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF</a>&nbsp;&nbsp;&nbsp;
+
+													<a href="#">
+														<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW PDF</a>
+												</div>
+											</div>
+										</li>
+
+										<li class="list-group-item  fax-item" rel="fax000i5">
+											<div class="row">
+												<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Incoming Fax">
+													<i aria-hidden="true" class="fa fa-sign-in"></i> 202-555-3333 </div>
+												<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+													<span class="">Bank Statements</span>
+													<span class="text-muted" style="font-size: 11px;"> (4 pages)</span>
+												</div>
+												<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+													<span class="dateRight">&nbsp;10/24</span>
+												</div>
+												<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+													<a href="#" title="Delete Fax" data-toggle="tooltip">
+														<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+													</a>&nbsp;</span>
+													<a href="#" title="Forward as Fax" data-toggle="tooltip">
+														<span class="fa fa-share">&nbsp;</span>
+													</a>
+												</div>
+
+											</div>
+											<div class="row fax-detail" id="fax000i5">
+												<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 fax-meta">
+													<strong>RECEIVED:</strong> 10/24 11:24AM ET
+													<br />
+													<strong>FROM:</strong> 202-555-3333 - (4 Pages)
+													<br />
+													<strong>CSID:</strong> BANK STATEMENTS DEC 16 </div>
+												<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 text-right">
+													<a href="#">
+														<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD</a>&nbsp;&nbsp;&nbsp;
+													<a href="#">
+														<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF</a>&nbsp;&nbsp;&nbsp;
+
+													<a href="#">
+														<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW PDF</a>
+												</div>
+											</div>
+										</li>
+										<li class="list-group-item  fax-item" rel="fax000i6">
+											<div class="row">
+												<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Incoming Fax">
+													<i aria-hidden="true" class="fa fa-sign-in"></i> 970-555-3333 </div>
+												<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+													<span class="">Reports v1</span>
+													<span class="text-muted" style="font-size: 11px;"> (8 pages)</span>
+												</div>
+												<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+													<span class="dateRight">&nbsp;10/23</span>
+												</div>
+												<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+													<a href="#" title="Delete Fax" data-toggle="tooltip">
+														<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+													</a>&nbsp;</span>
+													<a href="#" title="Forward as Fax" data-toggle="tooltip">
+														<span class="fa fa-share">&nbsp;</span>
+													</a>
+												</div>
+
+											</div>
+											<div class="row fax-detail" id="fax000i6">
+												<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 fax-meta">
+													<strong>RECEIVED:</strong> 10/23 10:19AM ET
+													<br />
+													<strong>FROM:</strong> 970-555-3333 - (8 Pages)
+													<br />
+													<strong>CSID:</strong> Reports v1 </div>
+												<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 text-right">
+													<a href="#">
+														<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD</a>&nbsp;&nbsp;&nbsp;
+													<a href="#">
+														<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF</a>&nbsp;&nbsp;&nbsp;
+
+													<a href="#">
+														<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW PDF</a>
+												</div>
+											</div>
+										</li>
+
+
+									</ul>
+								</ul>
 							</div>
 							<div class="tab-pane fade in" id="outgoing">
-								<div class="list-group">
-									<div class="list-group-item">
-										<span class="text-center">Outgoing</span>
-									</div>
-								</div>
+								<ul class="list-group">
+
+
+
+									<li class="list-group-item  fax-item" rel="fax000o4">
+										<div class="row">
+											<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Outgoing Fax">
+												<i aria-hidden="true" class="fa fa-sign-out"></i> 303-555-1212 </div>
+											<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+												<span class="">Thomas Resume v1</span>
+												<span class="text-muted" style="font-size: 11px;"> (2 pages)</span>
+											</div>
+											<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+												<span class="dateRight">&nbsp;10/25</span>
+											</div>
+											<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+												<a href="#" title="Delete Fax" data-toggle="tooltip">
+													<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+												</a>&nbsp;</span>
+												<a href="#" title="Forward as Fax" data-toggle="tooltip">
+													<span class="fa fa-share">&nbsp;</span>
+												</a>
+											</div>
+
+										</div>
+										<div class="row fax-detail" id="fax000o4">
+											<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 fax-meta">
+												<strong>SENT:</strong> 10/21/17 - 1:24PM ET
+												<br />
+												<strong>TO:</strong> 303-555-1212 - (2 Pages)
+												<br />
+												<strong>CSID:</strong> MEDFAX001A</div>
+											<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 text-right">
+												<a href="#">
+													<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD</a>&nbsp;&nbsp;&nbsp;
+												<a href="#">
+													<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF</a>&nbsp;&nbsp;&nbsp;
+
+												<a href="#">
+													<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW PDF</a>
+											</div>
+										</div>
+									</li>
+
+									<li class="list-group-item  fax-item" rel="fax000o7">
+										<div class="row">
+											<div class="col-md-3 col-sm-3 col-lg-2 col-xs-4" data-toggle="tooltip" title="Outgoing Fax">
+												<i aria-hidden="true" class="fa fa-sign-out"></i> 202-555-1212 </div>
+											<div class="col-md-7 col-sm-6 col-lg-8 col-xs-5">
+												<span class="">Bank Release document</span>
+												<span class="text-muted" style="font-size: 11px;"> (4 pages)</span>
+											</div>
+											<div class="col-md-1 col-sm-1 col-lg-1 col-xs-1">
+												<span class="dateRight">&nbsp;10/22</span>
+											</div>
+											<div class="col-md-1 col-sm-2 col-lg-1 col-xs-2">
+												<a href="#" title="Delete Fax" data-toggle="tooltip">
+													<span class="fa fa-trash" style="padding-left:5px;color:red;" onclick="alert('are you sure?');">
+												</a>&nbsp;</span>
+												<a href="#" title="Forward as Fax" data-toggle="tooltip">
+													<span class="fa fa-share">&nbsp;</span>
+												</a>
+											</div>
+
+										</div>
+										<div class="row fax-detail" id="fax000o7">
+											<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 fax-meta">
+												<strong>SENT:</strong> 10/22 5:04PM ET
+												<br />
+												<strong>TO:</strong> 202-555-1212, 202-555-1111, 202-490-4990 - (2 Pages)
+												<br />
+												<strong>CSID:</strong> BANK RELEASE DC</div>
+											<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 text-right">
+												<a href="#">
+													<i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD</a>&nbsp;&nbsp;&nbsp;
+												<a href="#">
+													<i class="fa fa-envelope" aria-hidden="true"></i> EMAIL PDF</a>&nbsp;&nbsp;&nbsp;
+
+												<a href="#">
+													<i class="fa fa-file-text-o" aria-hidden="true"></i> VIEW PDF</a>
+											</div>
+										</div>
+									</li>
+
+								</ul>
 							</div>
-							<div class="tab-pane fade in" id="send">
-								SendFax
-							</div>
+
 						</div>
 					</div>
 				</div>
@@ -492,6 +820,64 @@
 		</div>
 	</footer>
 	<!--End Footer-->
+	<!-- Modal -->
+	<div class="modal fade" id="send" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h3 class="modal-title" id="myModalLabel">Send a Fax</h3>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+					<form class="form-horizontal">
+						<div class="form-group noPaddingBottom">
+							<label class="col-sm-3">From Fax</label>
+							<div class="col-sm-9">
+								<p class="form-control-static">+1 (999) 444-3333</p>
+							</div>
+						</div>
+						<div class="form-group noPaddingBottom">
+							<label for="toFax" class="col-sm-3">To Fax #:</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="toFax" placeholder="use comma for multiple fax numbers">
+							</div>
+						</div>
+						<div class="form-group noPaddingBottom">
+							<label for="toHeader" class="col-sm-3">Header:</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="toHeader" placeholder="Max 50 characters">
+							</div>
+						</div>
+						<div class="form-group noPaddingBottom">
+							<label for="faxFiles" class="col-sm-3">Files:</label>
+							<div class="col-lg-9 col-sm-9">
+								<div class="input-group">
+									<input type="text" class="form-control" readonly placeholder="You can use PDF, DOC, TIF, JPG, TXT or XLS">
+
+									<label class="input-group-btn">
+										<span class="btn btn-black btn-sm">
+											Browse&hellip;
+											<input type="file" style="display: none;" multiple id="faxFiles">
+										</span>
+									</label>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-12 text-center">
+							<button type="button" class="btn btn-black" data-dismiss="modal">Cancel</button>&nbsp;&nbsp;<button type="button" class="btn btn-danger">Send Fax</button>
+						</div>
+					</form>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
 
 
 </body>

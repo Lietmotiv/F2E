@@ -95,7 +95,7 @@ hr { margin-top: 5px;margin-bottom: 10px; }
     display:none;
     border-top: 1px dotted #222;
     padding:10px;
-    background-color: #FFFFFF;
+    background-color: #EEEEEE;
     margin-top:10px;
 }
 .fax-meta{
@@ -130,4 +130,10 @@ hr { margin-top: 5px;margin-bottom: 10px; }
     background: white;
     cursor: inherit;
     display: block;
+}
+
+/* temporary hide of the send fax button */
+#navigation > ul > li:nth-child(3){
+
+    display:none !important;
 }
