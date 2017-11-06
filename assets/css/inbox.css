@@ -95,13 +95,8 @@ hr { margin-top: 5px;margin-bottom: 10px; }
     display:none;
     border-top: 1px dotted #222;
     padding:10px;
-<<<<<<< HEAD
     background-color: #EEEEEE;
     margin-top:10px;
-=======
-    background-color: #FFFFFF;
-    
->>>>>>> 9ba6a8bad20821d2ad5be27b95fd4f8577c690d7
 }
 .fax-meta{
     font-size: 1.1em;
@@ -142,6 +137,4 @@ hr { margin-top: 5px;margin-bottom: 10px; }
 #navigation > ul > li:nth-child(3){
 
     display:none !important;
-=======
->>>>>>> 9ba6a8bad20821d2ad5be27b95fd4f8577c690d7
 }
