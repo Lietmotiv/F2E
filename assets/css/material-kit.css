@@ -1293,8 +1293,9 @@ output {
 label {
   font-size: 14px;
   line-height: 1.42857;
-  color: #AAAAAA;
-  font-weight: 400; }
+  color: #000000;
+  font-weight: 400;
+  margin-top: 10px; }
 
 label.control-label {
   font-size: 11px;
@@ -1308,8 +1309,7 @@ label.control-label {
   font-size: 11px; }
 
 .form-group {
-  padding-bottom: 7px;
-  margin: 27px 0 0 0; }
+  padding-bottom: 7px; }
   .form-group .form-control {
     margin-bottom: 7px; }
     .form-group .form-control::-moz-placeholder {
@@ -1332,8 +1332,9 @@ label.control-label {
   .form-group label {
     font-size: 14px;
     line-height: 1.42857;
-    color: #AAAAAA;
-    font-weight: 400; }
+    color: #000000;
+    font-weight: 400;
+    margin-top: 10px; }
   .form-group label.control-label {
     font-size: 11px;
     line-height: 1.07143;
@@ -1359,8 +1360,7 @@ label.control-label {
     line-height: 1.07143; }
 
 .form-group.form-group-sm {
-  padding-bottom: 3px;
-  margin: 21px 0 0 0; }
+  padding-bottom: 3px; }
   .form-group.form-group-sm .form-control {
     margin-bottom: 3px; }
     .form-group.form-group-sm .form-control::-moz-placeholder {
@@ -1383,8 +1383,9 @@ label.control-label {
   .form-group.form-group-sm label {
     font-size: 11px;
     line-height: 1.5;
-    color: #AAAAAA;
-    font-weight: 400; }
+    color: #000000;
+    font-weight: 400;
+    margin-top: 10px; }
   .form-group.form-group-sm label.control-label {
     font-size: 9px;
     line-height: 1.125;
@@ -1410,8 +1411,7 @@ label.control-label {
     line-height: 1.125; }
 
 .form-group.form-group-lg {
-  padding-bottom: 9px;
-  margin: 30px 0 0 0; }
+  padding-bottom: 9px; }
   .form-group.form-group-lg .form-control {
     margin-bottom: 9px; }
     .form-group.form-group-lg .form-control::-moz-placeholder {
@@ -1434,8 +1434,9 @@ label.control-label {
   .form-group.form-group-lg label {
     font-size: 18px;
     line-height: 1.33333;
-    color: #AAAAAA;
-    font-weight: 400; }
+    color: #000000;
+    font-weight: 400;
+    margin-top: 10px; }
   .form-group.form-group-lg label.control-label {
     font-size: 14px;
     line-height: 1;
