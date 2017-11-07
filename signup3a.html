@@ -14,8 +14,8 @@
     <!--     Fonts and icons     -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
     <!-- CSS Files -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/assets/css/material-kit.css" rel="stylesheet" />
@@ -30,35 +30,35 @@
 <body>
     <!--Begin Registered Nav-->
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#FFFFFF;">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="http://f2e.8150.co">
-                        <img class="img-responsive logo-md" src="/assets/img/logos/WestFax_Color_100x300-300x100.png">
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="nav navbar-nav navbar-right">
-
-                        <li>
-                            <a href="how.html">How to use FaxForward</a>
-                        </li>
-                        <li>
-                            <a href="login.html" class="txt-red">
-                                <strong>Login</strong>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://f2e.8150.co">
+                    <img class="img-responsive logo-md" src="/assets/img/logos/WestFax_Color_100x300-300x100.png">
+                </a>
             </div>
-        </nav>
-        <!--End Registered Nav-->
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <a href="how.html">How to use FaxForward</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="txt-red">
+                            <strong>Login</strong>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End Registered Nav-->
     <div class="wrapper">
         <div class="main">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 col-sm-12">
+                    <div class="col-md-6 col-xs-offset-3 col-sm-12">
                         <form id="form3a signupForm" class="form-horizontal">
 
                             <div class="content">
@@ -84,76 +84,71 @@
                                         <input type="text" class="form-control" id="BillingZip" placeholder="Zip" required>
                                     </div>
                                 </div>
-                            </div>
 
 
-                        </form>
-                    </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-5 col-sm-12">
-                        <div class="page-header">
+                                <div class="page-header">
 
-                            <h3>Payment</h3>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
-                                <ul class="card_logos">
-                                    <li class="card_visa">Visa</li>
-                                    <li class="card_mastercard">Mastercard</li>
-                                    <li class="card_amex">American Express</li>
-                                    <li class="card_discover">Discover</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-8">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
-                                            <option>Month</option>
-                                            <option value="01">Jan (01)</option>
-                                            <option value="02">Feb (02)</option>
-                                            <option value="03">Mar (03)</option>
-                                            <option value="04">Apr (04)</option>
-                                            <option value="05">May (05)</option>
-                                            <option value="06">June (06)</option>
-                                            <option value="07">July (07)</option>
-                                            <option value="08">Aug (08)</option>
-                                            <option value="09">Sep (09)</option>
-                                            <option value="10">Oct (10)</option>
-                                            <option value="11">Nov (11)</option>
-                                            <option value="12">Dec (12)</option>
-                                        </select>
+                                    <h3>Payment</h3>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
                                     </div>
-                                    <div class="col-xs-4">
-                                        <select class="form-control" name="expiry-year">
-                                            <option value="13">2013</option>
-                                            <option value="14">2014</option>
-                                            <option value="15">2015</option>
-                                            <option value="16">2016</option>
-                                            <option value="17">2017</option>
-                                            <option value="18">2018</option>
-                                            <option value="19">2019</option>
-                                            <option value="20">2020</option>
-                                            <option value="21">2021</option>
-                                            <option value="22">2022</option>
-                                            <option value="23">2023</option>
-                                        </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+                                        <ul class="card_logos">
+                                            <li class="card_visa">Visa</li>
+                                            <li class="card_mastercard">Mastercard</li>
+                                            <li class="card_amex">American Express</li>
+                                            <li class="card_discover">Discover</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-8">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+                                                    <option>Month</option>
+                                                    <option value="01">Jan (01)</option>
+                                                    <option value="02">Feb (02)</option>
+                                                    <option value="03">Mar (03)</option>
+                                                    <option value="04">Apr (04)</option>
+                                                    <option value="05">May (05)</option>
+                                                    <option value="06">June (06)</option>
+                                                    <option value="07">July (07)</option>
+                                                    <option value="08">Aug (08)</option>
+                                                    <option value="09">Sep (09)</option>
+                                                    <option value="10">Oct (10)</option>
+                                                    <option value="11">Nov (11)</option>
+                                                    <option value="12">Dec (12)</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <select class="form-control" name="expiry-year">
+                                                    <option value="13">2013</option>
+                                                    <option value="14">2014</option>
+                                                    <option value="15">2015</option>
+                                                    <option value="16">2016</option>
+                                                    <option value="17">2017</option>
+                                                    <option value="18">2018</option>
+                                                    <option value="19">2019</option>
+                                                    <option value="20">2020</option>
+                                                    <option value="21">2021</option>
+                                                    <option value="22">2022</option>
+                                                    <option value="23">2023</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                    <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-4">
-                                <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code">
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <div class="row" style="padding-top:30px;">
