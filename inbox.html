@@ -699,7 +699,7 @@
 							</li>
 							<li>
 								<a href="#">></a>
-							
+
 							</li>
 						</ul>
 					</div>
@@ -831,7 +831,7 @@
 <script>
 	$(".fax-item").on('click', function (e) {
 		//trap click events for anchor links
-//		if (event.target.nodeName.toLowerCase() == 'a') return;
+		//		if (event.target.nodeName.toLowerCase() == 'a') return;
 		var target = $(this).attr('rel');
 		$(".fax-detail").hide() // Hide others
 		$("#" + target).show();
@@ -840,9 +840,9 @@
 
 	//Not going to use the event trap as it's not elegant. Using this stopProp call.
 	//This call allows the hrefs to fire even though they are "trapped" in a click wrapper.
-	$('.fax-item a').click(function(e){
-    e.stopPropagation(); 
-});
+	$('.fax-item a').click(function (e) {
+		e.stopPropagation();
+	});
 
 
 </script>
