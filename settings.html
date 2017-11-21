@@ -107,70 +107,148 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-12">
-                        <h3>Account Profile</h3>
+                        <h3>Account Settings</h3>
                     </div>
 
                 </div>
                 <hr>
                 <form class="form" method="" action="" class="form-group">
                     <div class="header header-info text-center">
-                        <h4>Please update your account information</h4>
-                        <p>For billing statements
-                            <a href="billing.html">click here</a>
-                        </p>
+                        <h3>Please update your notification settings and allowed fax forward senders</h3>
 
                     </div>
                     <div class="row">
                         <div class="col-md-2"></div>
                         <div class="col-md-8">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input type="text" id="firstName" placeholder="First Name" class="form-control" value="William">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="text" id="lastName" placeholder="Last Name" class="form-control" value="Smith">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email" value="bill.smith@fakemail.com">
-                                </div>
-                                <div class="col-lg-4">
-                                    <input type="email" class="form-control" id="phone" placeholder="Phone" value="222-333-4444">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <hr />
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter username" value="billsmith99"
-                                        disabled>
-                                </div>
-                                <div class="col-lg-6" style="padding-top:30px;">
-                                    <small id="usernameHelp" class="form-text text-muted">To change your username contact support at 222-333-4444</small>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input type="password" value="" id="password1" placeholder="New Password" class="form-control">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="password" value="" id="password2" placeholder="New Password confirm" class="form-control">
-                                </div>
-                            </div>
-                            <br />
-                            <div class="text-center">
-                                <a href="signup2.html" class="btn btn-info btn-lg">Update Account
-                                    <i class="material-icons">forward</i>
-                                </a>
-                            </div>
+                            <h4><strong>Allowed Senders</strong></h4>
+                            <p>Allowed senders are authorized to utilize the FaxForward Fax to Email service.
+                                <br /> To send a fax just email your attachment to 999-999-9999@faxforward.com where 999-999-9999
+                                is the recipient fax number and the fax is on it's way!</p>
+                            <table class="table">
+                                <th>Email</th>
+                                <th>Feedback</th>
+                                <th>Action</th>
+                                <tr>
+                                    <td>Bill.smith@acme.com</td>
+                                    <td>
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                            <a href="/edit/">
+                                                <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="/delete">
+                                                <i class="fa fa-trash fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bill.smith@acme.com</td>
+                                    <td>
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                            <a href="/edit/">
+                                                <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="/delete">
+                                                <i class="fa fa-trash fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bill.smith@acme.com</td>
+                                    <td>
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        <a href="/edit/">
+                                            <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="/delete">
+                                            <i class="fa fa-trash fa-fw" aria-hidden="true"></i>
+                                        </a>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr />
+                            <form action="/addSender" id="addSender" class="form-inline">
+                                <div class="col-md-2"><h6><strong>Add Sender:</strong></h6></div>
+                                <div class="col-md-4"><input type="text" class="form-control" id="email" placeholder="email@email.com"></div>
+                                <div class="col-md-4"  style="padding-top:15px;"><input type="checkbox"> Send Feedback</div>
+                                <div class="col-md-2"><button type="submit" class="btn btn-primary btn-xs">Add</button></div>
+                                
+                                
+                            </form>
+                            <br clear="all"/>
+                            <hr style="width: 100%;background: #222222; height: 5px;"/><br clear="all"/>
+                            <h4><strong>Notification Email</strong></h4>
+                            <p>These are email addresses that will be notified when a fax arrives. Use the "Notification Only" for sensitive or HIPAA compliance. In those cases we will only notify the person that a fax has arrived and they will need to login and retrieve it.</p>
+                            <table class="table">
+                                <th>Email</th>
+                                <th>Notification Only</th>
+                                <th>Action</th>
+                                <tr>
+                                    <td>Bill.smith@acme.com</td>
+                                    <td>
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                            <a href="/edit/">
+                                                <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="/delete">
+                                                <i class="fa fa-trash fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bill.smith@acme.com</td>
+                                    <td>
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                            <a href="/edit/">
+                                                <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="/delete">
+                                                <i class="fa fa-trash fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bill.smith@acme.com</td>
+                                    <td>
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    </td>
+                                    <td>
+                                        <a href="/edit/">
+                                            <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="/delete">
+                                            <i class="fa fa-trash fa-fw" aria-hidden="true"></i>
+                                        </a>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr />
+                            <form action="/addSender" id="addSender" class="form-inline">
+                                <div class="col-md-2"><h6><strong>Add Email:</strong></h6></div>
+                                <div class="col-md-4"><input type="text" class="form-control" id="email" placeholder="email@email.com"></div>
+                                <div class="col-md-4"  style="padding-top:15px;"><input type="checkbox"> Notification Only</div>
+                                <div class="col-md-2"><button type="submit" class="btn btn-primary btn-xs">Add</button></div>
+                                
+                                
+                            </form>
                         </div>
                         <div class="col-md-2"></div>
+
                     </div>
-
-
                 </form>
 
-                
+
             </div>
         </div>
     </div>
