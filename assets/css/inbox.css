@@ -176,10 +176,10 @@ hr { margin-top: 5px;margin-bottom: 10px; }
 
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     text-align: center;
     color: #f8f8f8;
-    background: url(/assets/img/backgrounds/back_4.jpg) no-repeat center center;
+    background: url(/assets/img/backgrounds/back_6.jpg) no-repeat top center;
     background-size: cover;
 }
 .intro-header-welcome {
@@ -187,14 +187,16 @@ hr { margin-top: 5px;margin-bottom: 10px; }
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(/assets/img/backgrounds/back_5.jpg) no-repeat center center;
+    background: url(/assets/img/backgrounds/back_2.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 17%;
+    padding-top: 11%;
     padding-bottom: 1%;
+    padding-left:5%;
+
 }
 
 
