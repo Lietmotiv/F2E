@@ -358,14 +358,14 @@ hr { margin-top: 5px;margin-bottom: 10px; }
   }
 
 .bg-callout{
-background-color: #333333;
+background-color: #2E363F;
 
 }
 .bg-callout h2, .bg-callout p {
     color:#FFFFFF;
 }
 section{
-    padding:80px 0;
+    padding:30px;
 }
 .text-faded {
     color: rgba(255, 255, 255, 0.7);
@@ -391,3 +391,43 @@ section{
   .onboard-panel{
       min-height: 300px;
   }
+
+  .welcome{
+    background: url('/assets/img/backgrounds/bg9_md.jpg') 0px 0px no-repeat;
+    background-size: cover;
+    padding-top:150px;
+    color: #FFFFFF;
+  
+  }
+  .jumbotron{
+    border-radius: 0;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .jumbotron .container{
+
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+    .jumbotron-sub {
+    background-color:#000000;
+    color: #e2383f;
+    font-size:2em;
+    text-align: center;
+    padding: 20px;
+    border-top: 7px solid #333;
+}
+.md-80{
+    font-size:80px;
+}
+.rtl{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}

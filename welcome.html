@@ -53,87 +53,65 @@
     <!--End Registered Nav-->
 
     <!-- Masthead -->
-    <div class="intro-header-welcome">
+    <div class="jumbotron welcome">
         <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <div class="blackBlock">
-                            <h1>Welcome to FaxForward</h1>
-                            <br clear="all" />
-                            <h3>Faxing services made simple</h3>
-                            <br clear="all" />
-
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-
+            <h1>Welcome Barry. Everything is setup! </h1>
+            <h2>Your new Fax # is 999-333-4444</h2>
+            <a href="/app/home/dashboard" class="btn btn-md btn-primary">START FAXING</a>
         </div>
-        <!-- /.container -->
     </div>
+
+
     <div class="container">
         <div class="row">
             <div class="col-md-12" style="padding-bottom:50px;">
-                <h2 class="text-center">How it Works</h2>
-                <h4>Whether you are a power-user that wants all the bells and whistles or you just want to put it on auto-pilot
-                    and forget about it, FaxForward can accomodate whatever faxing needs you have. Below are the two main
-                    parts of our service. Let
-                    <a href="mailto:info@westfax.com">us</a> know if you need anything else.</a>
-                </h4>
+                <h1 class="text-center">How it Works</h1>
+                <hr />
             </div>
         </div>
     </div>
+    
+
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-md-6">
-                    <div class="panel panel-primary onboard-panel">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">Send a Fax</h3>
-                            </div>
-                            <div class="panel-body">
-                                    
-                                    <h4><strong>Sending a fax is easy:</strong></h4>
-                                    <ul class="explainer">
-                                        <li>send an email to your recipient's fax number with faxforward.com as the domain. i.e. <em>9705551212@faxforward.com</em> and it'll be converted into a fax automatically. You'll get a notice when it sends. or...</li>
-                                        <li>Just browse to your <a href="/app/home/myfaxes">inbox</a> and click "Send Fax". We can handle almost any file type you can throw at us. </li>
-                                    </ul>
-                            </div>
-                          </div>
-              
+            <div class="col-md-4 text-center">
+                <i class="material-icons md-80">screen_share</i>
+                <br />
+                <h2>Sending Faxes</h2>
+                <p>Use our Send Tool or just send an email to your recipient using the following format: 9991112222@faxforward.com.</p>
+                <img src="/assets/img/sections/send_1.jpg" class="img-responsive" />
             </div>
-            <div class="col-sm-6 col-md-6">
-                    <div class="panel panel-primary onboard-panel">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">Get a Fax</h3>
-                            </div>
-                            <div class="panel-body">
-                                    
-                                    <h4><strong>Two ways to check your received faxes:<a href="#" data-toggle="confirmation" data-placement="left" id="alertX">Delete</a></strong></h4>
-                                    <ul class="explainer">
-                                        <li>Just give people your fax number <strong><%= this.SC.AuthData.GetDisplayInboundPhone() %></strong> and we'll email you when a fax arrives. Simple.</li>
-                                        <li>You can also check your incoming faxes at your <strong><a href="/app/home/dashboard">Dashboard</a></strong>. From there you can forward it, download it or view and print it. </li>
-                                    </ul>
-                            </div>
-                          </div>
-              
+            <div class="col-md-4 text-center">
+                <i class="material-icons md-80">move_to_inbox</i>
+                <br />
+                <h2>Getting Faxes</h2>
+                <p>You can log in to check your received faxes or set it up so we just email you the faxes as PDF's when they arrive</p>
+                <img src="/assets/img/sections/receive_1.jpg" class="img-responsive" />
             </div>
+            <div class="col-md-4 text-center">
+                <i class="material-icons md-80 rtl">reply_all</i>
+                <br />
+                <h2>Forward Faxes</h2>
+                <p>We make it easy to forward your faxes to colleagues or friends. Just use our Email Fax link or forward it via fax. </p>
+                <img src="/assets/img/sections/forward_1.jpg" class="img-responsive" />
+            </div>
+
         </div>
+
     </div>
-    <section class="bg-callout" style="padding-top:30px;">
+
+    <section class="bg-callout" style="padding:0;margin-top:40px;margin-bottom:120px;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="/app/home/dashboard" class="page-scroll btn btn-danger btn-lg sr-button">Let's Get Started!</a>
+                <div class="col-lg-12 text-center">
+                    <h3 style="color:#FFFFFF;">Welcome to WestFax.
+                        <strong> We Know Fax!</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="/app/home/dashboard" class="page-scroll btn btn-danger btn-md sr-button">Let's Get Started!</a>
+                    </h3>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!--Footer-->
     <footer class="footer navbar-fixed-bottom" style="background-color:#EEEEEE">
@@ -183,7 +161,7 @@
 <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="/assets/js/material.min.js"></script>
-<script src="/assets/js/bootstrap-confirmation.min.js"></script>
+<script src="/assets/jsg/bootstrap-confirmation.min.js"></script>
 <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
 <script src="/assets/js/nouislider.min.js" type="text/javascript"></script>
 
@@ -195,37 +173,40 @@
 
 <script>
     $('[data-toggle=confirmation]').confirmation();
-    $('[data-toggle=confirmation-singleton]').confirmation({ singleton: true });
-    $('[data-toggle=confirmation-popout]').confirmation({ popout: true });
-  
-    $('[data-toggle=confirmation-custom]').confirmation({
-      buttons: [
-        {
-          label: 'Approved',
-          class: 'btn btn-xs btn-success',
-          icon: 'glyphicon glyphicon-ok'
-        },
-        {
-          label: 'Rejected',
-          class: 'btn btn-xs btn-danger',
-          icon: 'glyphicon glyphicon-remove'
-        },
-        {
-          label: 'Need review',
-          class: 'btn btn-xs btn-warning',
-          icon: 'glyphicon glyphicon-search'
-        },
-        {
-          label: 'Decide later',
-          class: 'btn btn-xs btn-default',
-          icon: 'glyphicon glyphicon-time'
-        }
-      ]
+    $('[data-toggle=confirmation-singleton]').confirmation({
+        singleton: true
+    });
+    $('[data-toggle=confirmation-popout]').confirmation({
+        popout: true
     });
 
-    $( "#alertX" ).click(function() {
-  alert( "Handler for .click() called." );
-});
-  </script>
-  
+    $('[data-toggle=confirmation-custom]').confirmation({
+        buttons: [{
+                label: 'Approved',
+                class: 'btn btn-xs btn-success',
+                icon: 'glyphicon glyphicon-ok'
+            },
+            {
+                label: 'Rejected',
+                class: 'btn btn-xs btn-danger',
+                icon: 'glyphicon glyphicon-remove'
+            },
+            {
+                label: 'Need review',
+                class: 'btn btn-xs btn-warning',
+                icon: 'glyphicon glyphicon-search'
+            },
+            {
+                label: 'Decide later',
+                class: 'btn btn-xs btn-default',
+                icon: 'glyphicon glyphicon-time'
+            }
+        ]
+    });
+
+    $("#alertX").click(function () {
+        alert("Handler for .click() called.");
+    });
+</script>
+
 </html>
