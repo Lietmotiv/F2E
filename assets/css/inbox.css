@@ -432,3 +432,13 @@ section{
     filter: FlipH;
     -ms-filter: "FlipH";
 }
+
+.faxResults{
+    display:none;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 276px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
