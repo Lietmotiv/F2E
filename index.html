@@ -1,4 +1,104 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>WestFax >> FaxForward >> Inbox</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/material-kit.css" rel="stylesheet" />
+	<link href="assets/css/inbox.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<!--Begin Registered Nav-->
+	<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#FFFFFF;">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="http://f2e.8150.co">
+					<img class="img-responsive logo-md" src="/assets/img/logos/WestFax_Color_100x300-300x100.png">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="dashboard.html">
+							<strong>Dashboard</strong>
+						</a>
+					</li>
+					<li>
+						<a href="inbox.html">
+							<strong>My Faxes</strong>
+						</a>
+					</li>
+					<li>
+						<a href="newfax.html" class="txt-red">
+							<strong>Send a Fax</strong>
+						</a>
+					</li>
+					<li class="dropdown rightNav">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<span class="fa fa-user-circle-o"></span>
+						</a>
+						<ul class="dropdown-menu" style="border:1px dotted #111111;">
+							<li>
+								<div class="navbar-login">
+									<div class="row">
+										<div class="col-lg-4">
+											<p class="text-center">
+												<span class="fa fa-user-circle-o" style="font-size:80px;"></span>
+											</p>
+										</div>
+										<div class="col-lg-8">
+											<p class="text-left">
+												<strong>Bill Jones</strong>
+											</p>
+											<p class="text-left small">billjones@gmail.com</p>
+											<p class="text-left">
+												<a class="btn btn-black btn-block btn-sm" href="profile.html">Account Profile</a>
+												<br>
+												<strong>
+													<a href="help.html" target="_blank">Contact Us</a> &dash;
+													<a href="help.html" target="_blank">Help</a>
+												</strong>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<div class="navbar-login navbar-login-session">
+									<div class="row">
+										<div class="col-lg-12">
+											<p>
+												<a class="btn btn-danger btn-block" href="logout.html">Log out</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--End Registered Nav-->
 <asp:Content ID="sectionHeader" runat="server" ContentPlaceHolderID="HeaderContent">
     <ffuc:Nav ID="ctrlNavigation" runat="server"></ffuc:Nav>
     <link href="/assets/css/slider.css" rel="stylesheet" />
@@ -6,7 +106,6 @@
 <asp:Content ID="sectionFooter" runat="server" ContentPlaceHolderID="FooterContent">
     <ffuc:Foot ID="ctrlFoot" runat="server"></ffuc:Foot>
 </asp:Content>
-<asp:Content ID="sectionMain" runat="server" ContentPlaceHolderID="MainContent">
     <!-- Masthead -->
     <div class="intro-header">
         <div class="row">
@@ -128,8 +227,7 @@
             </div>
         </div>
     </aside>
-</asp:Content>
-<asp:Content ID="sectionScript" runat="server" ContentPlaceHolderID="ScriptContent">
+
     <script type="text/javascript">
         //    This runs to load the data the first time.
         //    $(document).ready(function () {
@@ -144,4 +242,139 @@
         function SetErrorText(err) { $("#errText").text(err.toString()); }
 
   </script>
-</asp:Content>
+
+<footer class="footer navbar-fixed-bottom" style="background-color:#EEEEEE">
+    <div class="container">
+        <nav class="pull-left">
+            <ul>
+                <li>
+                    <a href="http://www.westfax.com">&copy; 2017, WestFax</a>
+                </li>
+                <li>
+                    <a href="help.html">Help</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="tel:8004736208">(800) 473-6208</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="pull-right">
+            <ul>
+                <li>
+                    <a class="btn btn-simple btn-white btn-just-icon" href="https://twitter.com/westfaxinc" style="color:#0084b4" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn btn-simple btn-white btn-just-icon" href="https://www.facebook.com/westfaxinc/" style="color:#3b5998" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn btn-simple btn-white btn-just-icon" href="https://www.linkedin.com/company/950687/" style="color:#0077B5" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</footer>
+<!--End Footer-->
+<!-- Modal -->
+<div class="modal fade" id="send" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3 class="modal-title" id="myModalLabel">Send a Fax</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form class="form-horizontal">
+                        <div class="form-group noPaddingBottom">
+                            <label class="col-sm-3">From Fax</label>
+                            <div class="col-sm-9">
+                                <p class="form-control-static">+1 (999) 444-3333</p>
+                            </div>
+                        </div>
+                        <div class="form-group noPaddingBottom">
+                            <label for="toFax" class="col-sm-3">To Fax #:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="toFax" placeholder="use comma for multiple fax numbers">
+                            </div>
+                        </div>
+                        <div class="form-group noPaddingBottom">
+                            <label for="toHeader" class="col-sm-3">Header:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="toHeader" placeholder="Max 50 characters">
+                            </div>
+                        </div>
+                        <div class="form-group noPaddingBottom">
+                            <label for="faxFiles" class="col-sm-3">Files:</label>
+                            <div class="col-lg-9 col-sm-9">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" readonly placeholder="You can use PDF, DOC, TIF, JPG, TXT or XLS">
+
+                                    <label class="input-group-btn">
+                                        <span class="btn btn-black btn-sm">
+                                            Browse&hellip;
+                                            <input type="file" style="display: none;" multiple id="faxFiles">
+                                        </span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-black" data-dismiss="modal">Cancel</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-danger">Send Fax</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+<!--   Core JS Files   -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/material.min.js"></script>
+
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+
+<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+<script>
+$(".fax-item").on('click', function (e) {
+    //trap click events for anchor links
+    //		if (event.target.nodeName.toLowerCase() == 'a') return;
+    var target = $(this).attr('rel');
+    $(".fax-detail").hide() // Hide others
+    $("#" + target).show();
+    return false;
+});
+//Not going to use the event trap as it's not elegant. Using this stopProp call.
+//This call allows the hrefs to fire even though they are "trapped" in a click wrapper.
+$('.fax-item a').click(function (e) {
+    e.stopPropagation();
+});
+</script>
+
+</html>
